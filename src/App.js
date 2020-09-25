@@ -1,7 +1,7 @@
 import React from "react"
-import logo from "./logo.svg"
+import { Route, Link, Switch } from "react-router-dom"
 import "./App.css"
-import Nav from "./components/Nav"
+import { Nav, Skills, Projects, About } from "./components"
 
 function App() {
   return (
