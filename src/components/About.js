@@ -4,12 +4,8 @@ const About = () => {
   return (
     <section id="about" className="callout about">
       <article className="wrap">
-        <h2>About Me</h2>
-        <p>
-          Thanks for stopping by! Since you’ve made it this far, allow me to
-          take a minute to tell you a little about who I am.
-        </p>
-
+        <img className="self" src="https://i.imgur.com/dISokiO.jpg" />
+        <h2>Who Am I?</h2>
         <p>
           My life began with storytelling. It was what always interested me.
           This lead me from writing to screenwriting to eventually combining my

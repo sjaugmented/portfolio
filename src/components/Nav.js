@@ -7,7 +7,7 @@ const navItems = [
     text: "Skills",
   },
   {
-    href: "projects",
+    href: "#gallery",
     text: "Projects",
   },
   {
