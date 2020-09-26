@@ -35,10 +35,14 @@ const ProjectCard = ({
       <div className="buttons">
         {appLink && (
           <>
-            <button href={appLink}>Check out the app</button>
+            <a target="_blank" href={appLink}>
+              <button>Check out the app</button>
+            </a>
           </>
         )}
-        <button href={repoLink}>Check out the code</button>
+        <a target="_blank" href={repoLink}>
+          <button>Check out the code</button>
+        </a>
       </div>
     </section>
   )
