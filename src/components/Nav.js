@@ -23,13 +23,13 @@ const navItems = [
 const Nav = () => {
   return (
     <nav>
-      <a className="hamburger" href="">
+      {/* <a className="hamburger" href="">
         <i className="fa fa-bars" />
-      </a>
+      </a> */}
       <ul>
-        {navItems.map((item) => {
+        {navItems.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <a href={item.href}>{item.text}</a>
             </li>
           )

@@ -4,7 +4,11 @@ const About = () => {
   return (
     <section id="about" className="callout about">
       <article className="wrap">
-        <img className="self" src="https://i.imgur.com/dISokiO.jpg" />
+        <img
+          className="self"
+          src="https://i.imgur.com/dISokiO.jpg"
+          alt="my selfie"
+        />
         <h2>Who Am I?</h2>
         <p>
           My life began with storytelling. It was what always interested me.

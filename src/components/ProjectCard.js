@@ -25,24 +25,24 @@ const ProjectCard = ({
       <h3>{name}</h3>
       <img src={imgSrc} alt={index} />
       <div className="logos">
-        {tech.react && <img src={logos.react} />}
-        {tech.native && <img src={logos.native} />}
-        {tech.ios && <img src={logos.ios} />}
-        {tech.node && <img src={logos.node} />}
-        {tech.js && <img src={logos.js} />}
-        {tech.mongo && <img src={logos.mongo} />}
+        {tech.react && <img src={logos.react} alt="react" />}
+        {tech.native && <img src={logos.native} alt="react native" />}
+        {tech.ios && <img src={logos.ios} alt="iOS" />}
+        {tech.node && <img src={logos.node} alt="node.js" />}
+        {tech.js && <img src={logos.js} alt="javascript" />}
+        {tech.mongo && <img src={logos.mongo} alt="mongoDB" />}
       </div>
       <p>{description}</p>
       <p>{process}</p>
       <div className="buttons">
         {appLink && (
           <>
-            <a target="_blank" href={appLink}>
+            <a target="_blank" rel="noopener noreferrer" href={appLink}>
               <button>Check out the app</button>
             </a>
           </>
         )}
-        <a target="_blank" href={repoLink}>
+        <a target="_blank" rel="noopener noreferrer" href={repoLink}>
           <button>Check out the code</button>
         </a>
       </div>
