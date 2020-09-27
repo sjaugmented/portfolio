@@ -2,17 +2,17 @@ import React from "react"
 import "../App.css"
 
 const navItems = [
+  // {
+  //   href: "#skills",
+  //   text: "Skills",
+  // },
   {
-    href: "#skills",
-    text: "Skills",
+    href: "#about",
+    text: "My Story",
   },
   {
     href: "#gallery",
     text: "Projects",
-  },
-  {
-    href: "#about",
-    text: "About",
   },
   {
     href: "#contact",
