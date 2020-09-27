@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import * as emailjs from "emailjs-com"
 
 class Contact extends Component {
   state = {
@@ -8,15 +9,34 @@ class Contact extends Component {
     message: "",
   }
 
-  handleSubmit = (e) => {
-    e.preventDefault()
-    console.log(this.state)
+  resetForm = () => {
     this.setState({
       name: "",
       email: "",
       subject: "",
       message: "",
     })
+  }
+
+  handleSubmit = async (e) => {
+    e.preventDefault()
+
+    let templateParams = {
+      from_name: this.state.name,
+      from_email: this.state.email,
+      to_name: "Seth",
+      subject: this.state.subject,
+      message: this.state.message,
+    }
+
+    await emailjs.send(
+      "default_service",
+      "template_0piu4nl",
+      templateParams,
+      "user_igXlX8R7998fKkVyLJC1s"
+    )
+
+    this.resetForm()
   }
 
   handleChange = (e) => {
