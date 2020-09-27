@@ -14,6 +14,10 @@ const navItems = [
     href: "#about",
     text: "About",
   },
+  {
+    href: "#contact",
+    text: "Contact",
+  },
 ]
 
 const Nav = () => {

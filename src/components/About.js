@@ -40,8 +40,9 @@ const About = () => {
 
         <p>
           If you are looking for a creative Full Stack developer with an eye
-          toward user experience and narrative design, we should talk. We
-          probably have a lot in common.
+          toward user experience and narrative design,{" "}
+          <a href="#contact">we should talk</a>. We probably have a lot in
+          common.
         </p>
       </article>
     </section>
