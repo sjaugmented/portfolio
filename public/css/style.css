@@ -137,7 +137,7 @@ section {
 }
 
 .callout {
-  background-color: #cff2f6;
+  background-color: rgb(122, 121, 121);
 }
 
 /* ----------------------------------------
@@ -153,7 +153,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: rgb(202, 201, 201);
   z-index: 100;
 }
 
@@ -170,6 +170,7 @@ nav a {
   display: inline-block;
   border-bottom: none;
   text-transform: uppercase;
+  color: white;
 }
 
 .hamburger {

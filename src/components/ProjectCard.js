@@ -15,6 +15,7 @@ const ProjectCard = ({
   index,
   name,
   description,
+  process,
   appLink,
   repoLink,
   tech,
@@ -32,6 +33,7 @@ const ProjectCard = ({
         {tech.mongo && <img src={logos.mongo} />}
       </div>
       <p>{description}</p>
+      <p>{process}</p>
       <div className="buttons">
         {appLink && (
           <>

@@ -2,7 +2,7 @@
 Header
 ------------------------------------------- */
 header {
-  background-image: url("../images/home_header_bg.jpg");
+  background-image: url("../images/abstract-blur-v.jpg");
   background-attachment: fixed;
   height: 100vh;
 }
@@ -10,6 +10,10 @@ header {
 /* ----------------------------------------
 About
 ------------------------------------------- */
+.about {
+  color: lightgrey;
+}
+
 .about img {
   width: 25vw;
   height: 25vw;
@@ -56,6 +60,7 @@ Gallery
 
 #gallery {
   padding-bottom: 0;
+  /* background-color: rgb(199, 234, 250); */
 }
 
 #contact {
