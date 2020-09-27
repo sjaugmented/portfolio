@@ -10,8 +10,13 @@ const Projects = () => {
         <h2>Project Gallery</h2>
         <div>
           {projects.map((project, index) => {
+            let style = {}
+            if (index % 2 === 0) {
+              style = { backgroundColor: "rgb(202, 201, 201)" }
+            }
             return (
               <ProjectCard
+                style={style}
                 key={index}
                 imgSrc={project.imgUrl}
                 name={project.name}

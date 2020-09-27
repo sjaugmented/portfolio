@@ -137,7 +137,7 @@ section {
 }
 
 .callout {
-  background-color: rgb(122, 121, 121);
+  background-color: rgb(202, 201, 201);
 }
 
 /* ----------------------------------------
@@ -153,7 +153,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgb(202, 201, 201);
+  background-color: #5e5f5f;
   z-index: 100;
 }
 
@@ -296,7 +296,7 @@ textarea {
 Footer
 ------------------------------------------- */
 footer {
-  background-color: #cdf3f6;
+  background-color: #c4c5c5;
   overflow: auto;
 }
 
@@ -322,11 +322,11 @@ footer .wrap {
   margin-bottom: 30px;
   margin-bottom: 2rem;
   display: inline-block;
-  color: #44545e;
+  color: #c4c0c0;
 }
 
 .copyright {
-  border-top: 2px solid #44545e;
+  border-top: 2px solid #4f5050;
   padding: 15px 0 3px;
   padding: 1rem 0 0.2rem;
 }

@@ -23,9 +23,9 @@ const navItems = [
 const Nav = () => {
   return (
     <nav>
-      {/* <a className="hamburger" href="">
+      <a className="hamburger" href="">
         <i className="fa fa-bars" />
-      </a> */}
+      </a>
       <ul>
         {navItems.map((item, index) => {
           return (
@@ -35,6 +35,17 @@ const Nav = () => {
           )
         })}
       </ul>
+      <div class="social-links">
+        <a href="">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
     </nav>
   )
 }

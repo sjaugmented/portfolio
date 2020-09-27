@@ -11,6 +11,7 @@ const logos = {
 }
 
 const ProjectCard = ({
+  style,
   imgSrc,
   index,
   name,
@@ -21,7 +22,7 @@ const ProjectCard = ({
   tech,
 }) => {
   return (
-    <section>
+    <section style={style}>
       <h3>{name}</h3>
       <img src={imgSrc} alt={index} />
       <div className="logos">
