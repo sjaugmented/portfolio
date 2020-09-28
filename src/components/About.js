@@ -6,7 +6,7 @@ const About = () => {
       <article className="wrap">
         <img
           className="self"
-          src="https://i.imgur.com/dISokiO.jpg"
+          src="https://i.imgur.com/5KPInk0.jpg"
           alt="my selfie"
         />
         <h2>Who Am I?</h2>

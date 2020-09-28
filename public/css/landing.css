@@ -4,6 +4,7 @@ Header
 header {
   background-image: url("../images/stormtrooperKey.jpg");
   background-attachment: fixed;
+  background-position: center;
   height: 100vh;
 }
 
