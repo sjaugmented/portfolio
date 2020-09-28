@@ -8,7 +8,7 @@ const Social = () => {
         rel="noopener noreferrer"
         href="https://www.linkedin.com/in/cineseth/"
       >
-        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
       </a>
       <a
         target="_blank"
