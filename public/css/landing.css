@@ -2,9 +2,17 @@
 Header
 ------------------------------------------- */
 header {
-  background-image: url("../images/abstract-blur-v.jpg");
+  background-image: url("../images/stormtrooperKey.jpg");
   background-attachment: fixed;
   height: 100vh;
+}
+
+.title a {
+  text-shadow: 2px 2px 5px #000000;
+}
+
+.title h2 {
+  text-shadow: 2px 2px 5px #000000;
 }
 
 /* ----------------------------------------
@@ -63,9 +71,15 @@ Gallery
   /* background-color: rgb(199, 234, 250); */
 }
 
+#gallery button {
+  border: 2px solid black;
+  color: black;
+}
+
 #contact {
   padding-top: 24px;
   padding-top: 1.5rem;
+  background-color: rgb(37, 37, 37);
 }
 
 @media only screen and (max-width: 560px) {

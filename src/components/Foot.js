@@ -4,7 +4,7 @@ const Foot = () => {
   return (
     <footer>
       <div class="wrap"></div>
-      <p class="copyright">&copy;2020 Seth Johnson</p>
+      <p class="copyright">Let's move fast and break things.</p>
     </footer>
   )
 }

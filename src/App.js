@@ -9,6 +9,7 @@ import {
   About,
   Contact,
   Foot,
+  Social,
 } from "./components"
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Nav />
       <Header />
+      <Social />
       <About />
       <Skills />
       <Projects />

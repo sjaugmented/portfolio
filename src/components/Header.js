@@ -4,7 +4,7 @@ import "../App.css"
 const Header = () => {
   return (
     <header className="vertical-center">
-      <div>
+      <div className="title">
         <h1>
           <a href="#contact">Seth Johnson</a>
         </h1>
