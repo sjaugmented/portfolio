@@ -47,7 +47,7 @@ class Contact extends Component {
     return (
       <section id="contact">
         <div className="wrap">
-          <h2>Drop me a line</h2>
+          <h2 className="form-header">Drop me a line</h2>
           <form className="contact" onSubmit={this.handleSubmit}>
             <input
               type="text"

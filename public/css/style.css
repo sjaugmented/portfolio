@@ -297,6 +297,14 @@ textarea {
   font-weight: 600;
 }
 
+.contact button {
+  color: lightgrey;
+}
+
+.form-header {
+  color: lightgrey;
+}
+
 /* ----------------------------------------
 Footer
 ------------------------------------------- */
@@ -347,6 +355,7 @@ footer .wrap {
   padding: 15px 0 3px;
   padding: 1rem 0 0.2rem;
   text-align: center;
+  color: lightgrey;
 }
 
 /* ----------------------------------------
