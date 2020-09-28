@@ -1,4 +1,4 @@
-import Nav from "./Nav"
+import Nav from "./navbar/Nav"
 import Header from "./Header"
 import Projects from "./Projects"
 import Skills from "./Skills"
