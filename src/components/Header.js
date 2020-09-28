@@ -8,7 +8,10 @@ const Header = () => {
         <h1>
           <a href="#contact">Seth Johnson</a>
         </h1>
-        <h2>A Software Engineer Who Won't Kidnap and Murder You</h2>
+        <h2>
+          A Software Engineer Who <span className="underline">Won't</span>{" "}
+          Kidnap and Murder You
+        </h2>
       </div>
     </header>
   )
