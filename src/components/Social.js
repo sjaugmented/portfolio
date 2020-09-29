@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 const Social = () => {
   return (
@@ -6,9 +6,16 @@ const Social = () => {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/cineseth/"
+        href="https://github.com/sjaugmented"
       >
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i className="fa fa-github" aria-hidden="true"></i>
+      </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.linkedin.com/in/cineseth"
+      >
+        <i className="fa fa-linkedin" aria-hidden="true"></i>
       </a>
       <a
         target="_blank"

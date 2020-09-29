@@ -21,11 +21,18 @@ body {
 
 /* Responsive images */
 img {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .underline {
   text-decoration: underline;
+}
+
+.social-links .active {
+  background: red;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 /* ----------------------------------------

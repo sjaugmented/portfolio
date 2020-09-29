@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 // import { Route, Link, Switch } from "react-router-dom"
 import "./App.css"
 import {
@@ -18,9 +18,9 @@ function App() {
       <Nav />
       <Header />
       <Social />
-      <About />
       <Skills />
       <Projects />
+      <About />
       <Contact />
       <Foot />
     </div>
