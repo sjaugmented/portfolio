@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Nav />
       <Header />
-      <Social />
+      <Social scrollAware={true} className="social-links" />
       <Skills />
       <Projects />
       <About />

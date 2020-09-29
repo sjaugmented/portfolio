@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { useScrollPosition } from "../hooks/useScrollPosition"
 import { social } from "../data/navItems.json"
 
-const Social = () => {
+const Social = ({ scrollAware, className }) => {
   const [screenY, setScreenY] = useState(0)
 
   useScrollPosition(({ prevPos, currPos }) => {
@@ -11,10 +11,12 @@ const Social = () => {
 
   let style = {}
 
-  screenY < -800 ? (style = { opacity: 0 }) : (style = { opacity: 1 })
+  screenY < -800 && scrollAware === true
+    ? (style = { opacity: 0 })
+    : (style = { opacity: 1 })
 
   return (
-    <div className="social-links">
+    <div className={className}>
       {social.map((item, index) => {
         return (
           <a

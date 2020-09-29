@@ -361,6 +361,18 @@ footer img {
   color: rgb(3, 195, 209);
 }
 
+.contact-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  margin-bottom: -120px;
+}
+
+.contact-social a {
+  font-size: 3rem;
+}
+
 .copyright {
   border-top: 2px solid lightgrey;
   padding: 15px 0 3px;
@@ -429,6 +441,18 @@ Media Queries
 
   .social-links {
     display: none;
+  }
+
+  .contact-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .contact-social a {
+    font-size: 3rem;
   }
 
   .logos img {

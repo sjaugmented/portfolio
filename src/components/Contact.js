@@ -85,7 +85,7 @@ class Contact extends Component {
             />
             <button type="submit">Submit</button>
           </form>
-          <Social />
+          <Social scrollAware={false} className="contact-social" />
         </div>
       </section>
     )
