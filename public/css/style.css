@@ -334,6 +334,10 @@ footer .wrap {
   padding: 2rem 1rem;
 }
 
+footer img {
+  height: 100px;
+}
+
 .social-links {
   display: flex;
   flex-direction: column;
