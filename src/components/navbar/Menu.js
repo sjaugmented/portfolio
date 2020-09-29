@@ -1,5 +1,5 @@
 import React from "react"
-import navItems from "../../data/navItems.json"
+import { nav, social } from "../../data/navItems.json"
 import styled from "styled-components"
 
 const Ul = styled.ul`
@@ -17,12 +17,17 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     top: -15px;
     left: 0;
-    height: 300px;
+    height: 375px;
     width: 100vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     a {
       color: #fff;
+    }
+    a i {
+      font-size: 30px;
+      font-size: 2rem;
+      color: rgb(3, 195, 209);
     }
   }
 `
@@ -30,7 +35,7 @@ const Ul = styled.ul`
 const Menu = ({ open, setOpen }) => {
   return (
     <Ul open={open}>
-      {navItems.map((item, index) => {
+      {nav.map((item, index) => {
         return (
           <li key={index}>
             <a href={item.href} onClick={() => setOpen(!open)}>
@@ -39,6 +44,20 @@ const Menu = ({ open, setOpen }) => {
           </li>
         )
       })}
+      <li key={nav.length + social.length}>
+        {social.map((item, index) => {
+          return (
+            <a
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={item.href}
+            >
+              <i className={item.icon} aria-hidden="true"></i>
+            </a>
+          )
+        })}
+      </li>
     </Ul>
   )
 }

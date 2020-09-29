@@ -12,7 +12,7 @@ const Projects = () => {
           {projects.map((project, index) => {
             let style = {}
             if (index % 2 !== 0) {
-              style = { backgroundColor: "rgb(202, 201, 201)" }
+              style = { backgroundColor: "rgb(240, 240, 240)" }
             }
             return (
               <ProjectCard

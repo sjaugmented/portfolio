@@ -1,14 +1,36 @@
-[
-  {
-    "href": "#gallery",
-    "text": "Projects"
-  },
-  {
-    "href": "#about",
-    "text": "My Story"
-  },
-  {
-    "href": "#contact",
-    "text": "Contact"
-  }
-]
+{
+  "nav": [
+    {
+      "href": "#gallery",
+      "text": "Projects"
+    },
+    {
+      "href": "#about",
+      "text": "My Story"
+    },
+    {
+      "href": "#contact",
+      "text": "Contact"
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "href": "https://github.com/sjaugmented",
+      "icon": "fa fa-github",
+      "aria-hidden": "true"
+    },
+    {
+      "name": "LinkedIn",
+      "href": "https://www.linkedin.com/in/cineseth",
+      "icon": "fa fa-linkedin",
+      "aria-hidden": "true"
+    },
+    {
+      "name": "Instagram",
+      "href": "https://www.instagram.com/sether82/?hl=en",
+      "icon": "fa fa-instagram",
+      "aria-hidden": "true"
+    }
+  ]
+}

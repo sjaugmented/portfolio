@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { useScrollPosition } from "../hooks/useScrollPosition"
+import { social } from "../data/navItems.json"
 
 const Social = () => {
   const [screenY, setScreenY] = useState(0)
 
   useScrollPosition(({ prevPos, currPos }) => {
-    console.log(screenY)
-
     setScreenY(currPos.y)
   })
 
@@ -15,31 +14,20 @@ const Social = () => {
   screenY < -800 ? (style = { opacity: 0 }) : (style = { opacity: 1 })
 
   return (
-    <div class="social-links">
-      <a
-        style={style}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/sjaugmented"
-      >
-        <i className="fa fa-github" aria-hidden="true"></i>
-      </a>
-      <a
-        style={style}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/cineseth"
-      >
-        <i className="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      <a
-        style={style}
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.instagram.com/sether82/?hl=en"
-      >
-        <i className="fa fa-instagram" aria-hidden="true"></i>
-      </a>
+    <div className="social-links">
+      {social.map((item, index) => {
+        return (
+          <a
+            key={index}
+            style={style}
+            target="_blank"
+            rel="noopener noreferrer"
+            href={item.href}
+          >
+            <i className={item.icon} aria-hidden="true"></i>
+          </a>
+        )
+      })}
     </div>
   )
 }
