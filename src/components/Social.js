@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react"
+import { useScrollPosition } from "../hooks/useScrollPosition"
 
 const Social = () => {
+  const [hideOnScroll, setHideOnScroll] = useState(true)
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    console.log(currPos.x)
+    console.log(currPos.y)
+  })
+
   return (
     <div class="social-links">
       <a
