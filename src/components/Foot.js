@@ -22,13 +22,7 @@ const Foot = () => {
     <footer>
       <div className="wrap"></div>
       <p className="copyright">Let's move fast and break things.</p>
-      <span id="siteseal">
-        {/* <script
-          async
-          type="text/javascript"
-          src="https://seal.godaddy.com/getSeal?sealID=Uwek1tGFGFSG17CiFjCKXC8AOSzQldmfbjWhrKKjIcxT0LaCIotgHcIm3fhq"
-        ></script> */}
-      </span>
+      <span id="siteseal"></span>
     </footer>
   )
 }

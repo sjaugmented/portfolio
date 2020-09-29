@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import * as emailjs from "emailjs-com"
+import Social from "./Social.js"
 
 class Contact extends Component {
   state = {
@@ -84,6 +85,7 @@ class Contact extends Component {
             />
             <button type="submit">Submit</button>
           </form>
+          <Social />
         </div>
       </section>
     )
