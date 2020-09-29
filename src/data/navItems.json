@@ -1,11 +1,11 @@
 [
   {
-    "href": "#about",
-    "text": "My Story"
-  },
-  {
     "href": "#gallery",
     "text": "Projects"
+  },
+  {
+    "href": "#about",
+    "text": "My Story"
   },
   {
     "href": "#contact",

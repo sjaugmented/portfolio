@@ -12,9 +12,7 @@ const Social = () => {
 
   let style = {}
 
-  screenY < -800
-    ? (style = { color: "rgb(16, 105, 101)" })
-    : (style = { color: "rgb(32, 209, 200)" })
+  screenY < -800 ? (style = { opacity: 0 }) : (style = { opacity: 1 })
 
   return (
     <div class="social-links">
