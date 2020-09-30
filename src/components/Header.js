@@ -4,6 +4,9 @@ import "../App.css"
 const Header = () => {
   return (
     <header className="vertical-center">
+      {/* <div className="bg-image">
+        <img src="https://i.imgur.com/59mojbA.jpg" alt="background" />
+      </div> */}
       <div className="title">
         <h1>
           <a href="#contact">Seth Johnson</a>
