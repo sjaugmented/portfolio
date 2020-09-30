@@ -22,8 +22,8 @@ const ProjectCard = ({
   tech,
 }) => {
   return (
-    <section style={style}>
-      <h3>{name}</h3>
+    <section className="project-card" style={style}>
+      <h3 className="project-name">{name}</h3>
       <img src={imgSrc} alt={index} />
       <div className="logos">
         {tech.react && <img src={logos.react} alt="react" />}

@@ -76,6 +76,18 @@ Gallery
   /* background-color: rgb(199, 234, 250); */
 }
 
+.gallery-heading {
+  margin-bottom: -10px;
+}
+
+.project-card {
+  padding: 50px;
+}
+
+.project-name {
+  margin-top: 0px;
+}
+
 #gallery button {
   border: 2px solid black;
   color: black;
