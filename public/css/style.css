@@ -364,13 +364,14 @@ footer img {
 .contact-social {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 40px;
   margin-bottom: -100px;
 }
 
 .contact-social a {
   font-size: 3rem;
+  margin: 0 40px;
 }
 
 .copyright {
