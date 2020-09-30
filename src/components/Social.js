@@ -18,17 +18,19 @@ const Social = ({ scrollAware, className }) => {
   return (
     <div className={className}>
       {social.map((item, index) => {
-        return (
-          <a
-            key={index}
-            style={style}
-            target="_blank"
-            rel="noopener noreferrer"
-            href={item.href}
-          >
-            <i className={item.icon} aria-hidden="true"></i>
-          </a>
-        )
+        if (item.name !== "Instagram") {
+          return (
+            <a
+              key={index}
+              style={style}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={item.href}
+            >
+              <i className={item.icon} aria-hidden="true"></i>
+            </a>
+          )
+        }
       })}
     </div>
   )
