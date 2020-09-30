@@ -46,16 +46,18 @@ const Menu = ({ open, setOpen }) => {
       })}
       <li key={nav.length + social.length}>
         {social.map((item, index) => {
-          return (
-            <a
-              key={index}
-              target="_blank"
-              rel="noopener noreferrer"
-              href={item.href}
-            >
-              <i className={item.icon} aria-hidden="true"></i>
-            </a>
-          )
+          if (item.name !== "Instagram") {
+            return (
+              <a
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={item.href}
+              >
+                <i className={item.icon} aria-hidden="true"></i>
+              </a>
+            )
+          }
         })}
       </li>
     </Ul>
