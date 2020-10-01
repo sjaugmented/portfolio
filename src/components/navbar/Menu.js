@@ -57,7 +57,7 @@ const Menu = ({ open, setOpen }) => {
                 <i className={item.icon} aria-hidden="true"></i>
               </a>
             )
-          }
+          } else return ""
         })}
       </li>
     </Ul>

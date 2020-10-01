@@ -51,6 +51,15 @@ About
 /* ----------------------------------------
 Gallery
 ------------------------------------------- */
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
 .masonry {
   column-count: 3;
   width: 100%;

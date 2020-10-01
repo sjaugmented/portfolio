@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "../projectCard.css"
 
 const logos = {
@@ -20,9 +20,17 @@ const ProjectCard = ({
   appLink,
   repoLink,
   tech,
+  isVisible,
 }) => {
+  const [vis, setVis] = useState(false)
+
   return (
-    <section className="project-card" style={style}>
+    <section
+      className={
+        isVisible ? "project-card fade-in appear" : "project-card fade-in"
+      }
+      style={style}
+    >
       <h3 className="project-name">{name}</h3>
       <img src={imgSrc} alt={index} />
       <div className="logos">
