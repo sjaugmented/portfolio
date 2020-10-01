@@ -97,6 +97,11 @@ Gallery
   margin-top: 0px;
 }
 
+.project-card p {
+  font-size: 17.6px;
+  font-size: 1.1rem;
+}
+
 #gallery button {
   border: 2px solid black;
   color: black;

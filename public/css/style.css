@@ -179,8 +179,8 @@ nav a {
   font-weight: 600;
   letter-spacing: 0.75px;
   letter-spacing: 0.05rem;
-  padding: 3px 60px;
-  padding: 0.2rem 4rem;
+  padding: 3px 30px;
+  padding: 0.2rem 2rem;
   display: inline-block;
   border-bottom: none;
   text-transform: uppercase;
@@ -414,9 +414,10 @@ Modal
 /* ----------------------------------------
 Media Queries
 ------------------------------------------- */
-@media only screen and (max-width: 790px) {
+
+@media only screen and (max-width: 850px) {
   nav a {
-    padding: 0.2rem 2rem;
+    padding: 0.2rem 1rem;
   }
   .col-third {
     width: 100%;
@@ -447,7 +448,7 @@ Media Queries
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 605px) {
   html {
     font-size: 14px;
   }
