@@ -396,13 +396,13 @@ Modal
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 100vw;
   height: 25vh;
   background-color: white;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
+  -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
 }
 
 .modal p {
@@ -518,18 +518,18 @@ Media Queries
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50vw;
+    width: 100vw;
     height: 20vh;
     background-color: white;
-    border-radius: 20px;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
+    -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.452);
   }
 
   .modal p {
     text-align: center;
-    font-size: 120%;
+    font-size: 1.3rem;
     margin: 0 auto 30px auto;
     padding: 0 30px;
   }
