@@ -39,18 +39,31 @@ const Menu = ({ open, setOpen }) => {
       {nav.map((item, index) => {
         return (
           <li key={index}>
-            <Link
-              key={index}
-              activeClass="active"
-              to={item.link}
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={750}
-              onClick={() => setOpen(!open)}
-            >
-              {item.text}
-            </Link>
+            {console.log(item.link)}
+            {item.link !== undefined ? (
+              <Link
+                key={index}
+                activeClass="active"
+                to={item.link}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={750}
+                onClick={() => setOpen(!open)}
+              >
+                {item.text}
+              </Link>
+            ) : (
+              <a
+                key={index}
+                target="_blank"
+                rel="noopener noreferrer"
+                href={item.href}
+                onClick={() => setOpen(!open)}
+              >
+                {item.text}
+              </a>
+            )}
           </li>
         )
       })}

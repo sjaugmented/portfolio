@@ -12,16 +12,29 @@ const Nav = () => {
         {nav.map((item, index) => {
           return (
             <li key={index}>
-              <Link
-                activeClass="active"
-                to={item.link}
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                {item.text}
-              </Link>
+              {console.log(item.link)}
+              {item.link !== undefined ? (
+                <Link
+                  key={index}
+                  activeClass="active"
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={750}
+                >
+                  {item.text}
+                </Link>
+              ) : (
+                <a
+                  key={index}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={item.href}
+                >
+                  {item.text}
+                </a>
+              )}
             </li>
           )
         })}
