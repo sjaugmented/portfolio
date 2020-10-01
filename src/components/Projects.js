@@ -5,7 +5,7 @@ import projects from "../data/projects.json"
 // import useWindowSize from "../hooks/useWindowSize"
 import TrackVisibility from "react-on-screen"
 
-const Projects = () => {
+const Projects = ({ id }) => {
   // const size = useWindowSize()
 
   return (

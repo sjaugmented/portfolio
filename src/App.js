@@ -19,9 +19,9 @@ function App() {
       <Header />
       <Social scrollAware={true} className="social-links" />
       <Skills />
-      <Projects />
-      <About />
-      <Contact />
+      <Projects id="gallery" />
+      <About id="about" />
+      <Contact id="contact" />
       <Foot />
     </div>
   )
