@@ -78,7 +78,7 @@ a {
 }
 
 a:hover {
-  color: #44545e;
+  color: rgb(3, 195, 209);
 }
 
 /* ----------------------------------------
@@ -218,7 +218,7 @@ button {
 }
 
 button:hover {
-  background-color: #44545e;
+  background-color: rgb(3, 195, 209);
   color: white;
   font-weight: 600;
 }
