@@ -38,6 +38,7 @@ class Contact extends Component {
     )
 
     this.resetForm()
+    this.props.setVisible(true)
   }
 
   handleChange = (e) => {
