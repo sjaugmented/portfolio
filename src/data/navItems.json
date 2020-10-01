@@ -6,6 +6,11 @@
       "link": "gallery"
     },
     {
+      "href": "#skills",
+      "text": "Skills",
+      "link": "skills"
+    },
+    {
       "href": "#about",
       "text": "My Story",
       "link": "about"

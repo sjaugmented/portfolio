@@ -1,5 +1,6 @@
 import React from "react"
 import { nav, social } from "../../data/navItems.json"
+import { Link, animateScroll as scroll } from "react-scroll"
 import styled from "styled-components"
 
 const Ul = styled.ul`
@@ -17,7 +18,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     top: -15px;
     left: 0;
-    height: 375px;
+    height: 430px;
     width: 100vw;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
@@ -38,9 +39,18 @@ const Menu = ({ open, setOpen }) => {
       {nav.map((item, index) => {
         return (
           <li key={index}>
-            <a href={item.href} onClick={() => setOpen(!open)}>
+            <Link
+              key={index}
+              activeClass="active"
+              to={item.link}
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={750}
+              onClick={() => setOpen(!open)}
+            >
               {item.text}
-            </a>
+            </Link>
           </li>
         )
       })}

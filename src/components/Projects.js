@@ -19,7 +19,7 @@ const Projects = ({ id }) => {
               style = { backgroundColor: "rgb(240, 240, 240)" }
             }
             return (
-              <TrackVisibility once partialVisibility offset={-250}>
+              <TrackVisibility key={index} once partialVisibility offset={-250}>
                 <ProjectCard
                   style={style}
                   key={index}
