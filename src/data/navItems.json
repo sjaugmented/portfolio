@@ -1,6 +1,11 @@
 {
   "nav": [
     {
+      "href": "#skills",
+      "text": "Skills",
+      "link": "skills"
+    },
+    {
       "href": "#gallery",
       "text": "Projects",
       "link": "gallery"

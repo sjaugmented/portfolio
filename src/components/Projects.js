@@ -11,7 +11,7 @@ const Projects = ({ id }) => {
   return (
     <section id="gallery">
       <div className="wrap">
-        <h2 className="gallery-heading">Project Gallery</h2>
+        <h2 className="gallery-heading">What I've Done</h2>
         <div>
           {projects.map((project, index) => {
             let style = {}

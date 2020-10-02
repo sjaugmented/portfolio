@@ -25,8 +25,8 @@ function App() {
       <Nav />
       <Header />
       <Social scrollAware={true} className="social-links" />
-      <Projects />
       <Skills />
+      <Projects />
       <About />
       <Contact visible={visibile} setVisible={setVisible} />
       <Foot />
