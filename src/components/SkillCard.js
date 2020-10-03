@@ -1,13 +1,16 @@
-import React, { useRef } from "react"
-import { useTrail, animated, useChain } from "react-spring"
+import React from "react"
+import { useTrail, animated } from "react-spring"
 
 const config = { mass: 1, tension: 170, friction: 26 }
 
-export default function SkillCard({ data, isVisible, placeHolder }) {
+export default function SkillCard({ data, isVisible, placeHolder, reverse }) {
   const trail = useTrail(data.length, {
     config,
     delay: 0,
-    from: { opacity: 0, transform: "translate(100vw)" },
+    from: {
+      opacity: 0,
+      transform: reverse ? "translate(-100vw)" : "translate(100vw)",
+    },
     to: { opacity: 1, transform: "translate(0vw)" },
   })
 

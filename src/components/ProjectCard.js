@@ -1,15 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import "../projectCard.css"
 import skills from "../data/skills.json"
-
-const logos = {
-  js: "https://i.imgur.com/YggAT7k.png",
-  node: "https://i.imgur.com/YmyweW2.png",
-  mongo: "https://i.imgur.com/ayWrp2i.png",
-  react: "https://i.imgur.com/ZNxz1vd.png",
-  native: "https://i.imgur.com/ZxtHdTj.png",
-  ios: "https://i.imgur.com/lR4SrPL.png",
-}
 
 const ProjectCard = ({
   style,
@@ -23,8 +14,6 @@ const ProjectCard = ({
   tech,
   isVisible,
 }) => {
-  const [vis, setVis] = useState(false)
-
   return (
     <section
       className={

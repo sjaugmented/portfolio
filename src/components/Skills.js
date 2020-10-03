@@ -17,25 +17,29 @@ const Skills = () => {
       </div>
       <div className="skills-section">
         <h3>Front End</h3>
-        <TrackVisibility key="0" once partialVisibility>
-          {({ isVisible }) => isVisible && <SkillCard data={skills.front} />}
+        <TrackVisibility key="0" once partialVisibility offset={100}>
+          {({ isVisible }) =>
+            isVisible && <SkillCard data={skills.front} reverse />
+          }
         </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>Back End</h3>
-        <TrackVisibility key="0" once partialVisibility>
+        <TrackVisibility key="0" once partialVisibility offset={100}>
           {({ isVisible }) => isVisible && <SkillCard data={skills.back} />}
         </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>API's</h3>
-        <TrackVisibility key="0" once partialVisibility>
-          {({ isVisible }) => isVisible && <SkillCard data={skills.apis} />}
+        <TrackVisibility key="0" once partialVisibility offset={100}>
+          {({ isVisible }) =>
+            isVisible && <SkillCard data={skills.apis} reverse />
+          }
         </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>Platforms</h3>
-        <TrackVisibility key="0" once partialVisibility>
+        <TrackVisibility key="0" once partialVisibility offset={100}>
           {({ isVisible }) =>
             isVisible && <SkillCard data={skills.platforms} />
           }

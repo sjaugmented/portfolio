@@ -2,7 +2,7 @@ import React from "react"
 import "../../App.css"
 import Burger from "./Burger"
 import { nav } from "../../data/navItems.json"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 
 const Nav = () => {
   return (

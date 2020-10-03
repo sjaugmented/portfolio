@@ -1,6 +1,6 @@
 import React from "react"
 import { nav, social } from "../../data/navItems.json"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import styled from "styled-components"
 
 const Ul = styled.ul`
