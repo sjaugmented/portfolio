@@ -52,7 +52,7 @@ About
 Skills
 ------------------------------------------- */
 #skills {
-  padding-bottom: 150px;
+  padding-bottom: 100px;
   background-color: rgb(240, 240, 240);
   display: flex;
   flex-direction: column;
@@ -156,6 +156,10 @@ Gallery
     background-attachment: scroll;
     background-position: center;
     height: 175vw;
+  }
+
+  #skills {
+    padding-bottom: 50px;
   }
 
   .skills-list {
