@@ -159,7 +159,7 @@ Gallery
   height: 100%;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 605px) {
   .masonry {
     column-count: 2;
   }
@@ -169,5 +169,13 @@ Gallery
     background-attachment: scroll;
     background-position: center;
     height: 175vw;
+  }
+
+  .skills-list {
+    display: flex;
+    /* flex-direction: row; */
+    margin: -20px 0 50px 0;
+    /* align-items: center; */
+    justify-content: space-evenly;
   }
 }
