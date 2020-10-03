@@ -31,10 +31,6 @@
       "icon": "https://i.imgur.com/ZxtHdTj.png"
     },
     {
-      "name": "iOS",
-      "icon": "https://i.imgur.com/lR4SrPL.png"
-    },
-    {
       "name": "Materialize",
       "icon": "https://i.imgur.com/beocWFi.png"
     },
@@ -84,6 +80,10 @@
     }
   ],
   "platforms": [
+    {
+      "name": "iOS",
+      "icon": "https://i.imgur.com/lR4SrPL.png"
+    },
     {
       "name": "Unity",
       "icon": "https://i.imgur.com/4MLOznq.png"

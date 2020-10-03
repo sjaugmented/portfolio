@@ -11,8 +11,6 @@
       "googlePlaces": true,
       "googleAuth": true,
       "js": true,
-      "html": true,
-      "css": true,
       "node": true,
       "express": true,
       "materialize": true,

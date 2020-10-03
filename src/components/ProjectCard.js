@@ -34,6 +34,7 @@ const ProjectCard = ({
     >
       <h3 className="project-name">{name}</h3>
       <div className="logos api">
+        {tech.ios && <img src={skills.platforms[0].icon} alt="ios platform" />}
         {tech.appleMaps && (
           <img src={skills.apis[0].icon} alt="apple maps api" />
         )}
@@ -58,11 +59,10 @@ const ProjectCard = ({
 
         {tech.react && <img src={skills.front[0].icon} alt="react" />}
         {tech.native && <img src={skills.front[1].icon} alt="react native" />}
-        {tech.ios && <img src={skills.front[2].icon} alt="iOS" />}
         {tech.materialize && (
-          <img src={skills.front[3].icon} alt="materialize" />
+          <img src={skills.front[2].icon} alt="materialize" />
         )}
-        {tech.ant && <img src={skills.front[4].icon} alt="ant design" />}
+        {tech.ant && <img src={skills.front[3].icon} alt="ant design" />}
 
         {tech.node && <img src={skills.back[0].icon} alt="node.js" />}
         {tech.mongo && <img src={skills.back[1].icon} alt="mongoDB" />}
