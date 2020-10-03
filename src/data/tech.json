@@ -1,0 +1,104 @@
+{
+  "langugage": [
+    {
+      "name": "C#",
+      "icon": "https://i.imgur.com/ZBQwyrq.png"
+    },
+    {
+      "name": "HTML",
+      "icon": "https://i.imgur.com/r4Y4CQi.png"
+    },
+    {
+      "name": "CSS",
+      "icon": "https://i.imgur.com/a4G7vzv.png"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "https://i.imgur.com/ScUQvuT.png"
+    },
+    {
+      "name": "Python",
+      "icon": "https://i.imgur.com/Ui53wjJ.png"
+    }
+  ],
+  "front": [
+    {
+      "name": "React",
+      "icon": "https://i.imgur.com/ZNxz1vd.png"
+    },
+    {
+      "name": "React Native",
+      "icon": "https://i.imgur.com/ZxtHdTj.png"
+    },
+    {
+      "name": "iOS",
+      "icon": "https://i.imgur.com/lR4SrPL.png"
+    },
+    {
+      "name": "Materialize",
+      "icon": "https://i.imgur.com/beocWFi.png"
+    },
+    {
+      "name": "Ant Design",
+      "icon": "https://i.imgur.com/jdp1dMM.png"
+    }
+  ],
+  "back": [
+    {
+      "name": "Node.JS",
+      "icon": "https://i.imgur.com/YmyweW2.png"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "https://i.imgur.com/ayWrp2i.png"
+    },
+    {
+      "name": "Express",
+      "icon": "https://i.imgur.com/Sh5Akqz.png"
+    },
+    {
+      "name": "SQL",
+      "icon": "https://i.imgur.com/WcA9gaB.png"
+    }
+  ],
+  "api": [
+    {
+      "name": "Apple Maps",
+      "icon": "https://i.imgur.com/KLO9bUE.png"
+    },
+    {
+      "name": "Google Auth",
+      "icon": "https://i.imgur.com/YTaBhxn.png"
+    },
+    {
+      "name": "Google Maps",
+      "icon": "https://i.imgur.com/abq5fNm.png"
+    },
+    {
+      "name": "Google Places",
+      "icon": "https://i.imgur.com/cijLdtV.png"
+    },
+    {
+      "name": "Spotify",
+      "icon": "https://i.imgur.com/1ZKXJev.png"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Unity",
+      "icon": "https://i.imgur.com/4MLOznq.png"
+    },
+    {
+      "name": "Hololens 2",
+      "icon": "https://i.imgur.com/Lz9C3bq.png"
+    },
+    {
+      "name": "Lightroom",
+      "icon": "https://i.imgur.com/L02le2F.png"
+    },
+    {
+      "name": "Photoshop",
+      "icon": "https://i.imgur.com/y77PSxX.png"
+    }
+  ]
+}
