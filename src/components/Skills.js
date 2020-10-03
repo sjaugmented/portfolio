@@ -1,5 +1,5 @@
 import React from "react"
-import tech from "../data/tech.json"
+import skills from "../data/skills.json"
 import SkillCard from "./SkillCard"
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
           <h3>Languages</h3>
           <div className="skills-list">
             <div className="logos">
-              {tech.langugage.map((item, index) => {
+              {skills.languages.map((item, index) => {
                 return <img key={index} src={item.icon} alt={item.name} />
               })}
             </div>
@@ -21,7 +21,7 @@ const Skills = () => {
           <h3>Front End</h3>
           <div className="skills-list">
             <div className="logos">
-              {tech.front.map((item, index) => {
+              {skills.front.map((item, index) => {
                 return <img key={index} src={item.icon} alt={item.name} />
               })}
             </div>
@@ -31,7 +31,7 @@ const Skills = () => {
           <h3>Back End</h3>
           <div className="skills-list">
             <div className="logos">
-              {tech.back.map((item, index) => {
+              {skills.back.map((item, index) => {
                 return <img key={index} src={item.icon} alt={item.name} />
               })}
             </div>
@@ -41,7 +41,7 @@ const Skills = () => {
           <h3>API's</h3>
           <div className="skills-list">
             <div className="logos">
-              {tech.api.map((item, index) => {
+              {skills.apis.map((item, index) => {
                 return <img key={index} src={item.icon} alt={item.name} />
               })}
             </div>
@@ -51,7 +51,7 @@ const Skills = () => {
           <h3>Platforms</h3>
           <div className="skills-list">
             <div className="logos">
-              {tech.platforms.map((item, index) => {
+              {skills.platforms.map((item, index) => {
                 return <img key={index} src={item.icon} alt={item.name} />
               })}
             </div>

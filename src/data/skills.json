@@ -1,5 +1,5 @@
 {
-  "langugage": [
+  "languages": [
     {
       "name": "C#",
       "icon": "https://i.imgur.com/ZBQwyrq.png"
@@ -61,7 +61,7 @@
       "icon": "https://i.imgur.com/WcA9gaB.png"
     }
   ],
-  "api": [
+  "apis": [
     {
       "name": "Apple Maps",
       "icon": "https://i.imgur.com/KLO9bUE.png"
