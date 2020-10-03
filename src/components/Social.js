@@ -18,8 +18,8 @@ const Social = ({ scrollAware, className }) => {
   return (
     <div className={className}>
       {social.map((item, index) => {
-        if (item.name !== "Instagram") {
-          return (
+        return (
+          item.name !== "Instagram" && (
             <a
               key={index}
               style={style}
@@ -30,7 +30,7 @@ const Social = ({ scrollAware, className }) => {
               <i className={item.icon} aria-hidden="true"></i>
             </a>
           )
-        }
+        )
       })}
     </div>
   )
