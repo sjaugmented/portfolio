@@ -39,7 +39,6 @@ const Menu = ({ open, setOpen }) => {
       {nav.map((item, index) => {
         return (
           <li key={index}>
-            {console.log(item.link)}
             {item.link !== undefined ? (
               <Link
                 key={index}

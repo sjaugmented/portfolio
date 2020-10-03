@@ -68,6 +68,14 @@ Skills
   justify-content: space-evenly;
 }
 
+.animated {
+  display: inline-flex;
+}
+
+.placeholder {
+  display: inline-flex;
+  opacity: 0;
+}
 /* ----------------------------------------
 Gallery
 ------------------------------------------- */

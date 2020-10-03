@@ -12,7 +12,6 @@ const Nav = () => {
         {nav.map((item, index) => {
           return (
             <li key={index}>
-              {console.log(item.link)}
               {item.link !== undefined ? (
                 <Link
                   key={index}
@@ -20,7 +19,7 @@ const Nav = () => {
                   to={item.link}
                   spy={true}
                   smooth={true}
-                  offset={0}
+                  offset={50}
                   duration={750}
                 >
                   {item.text}

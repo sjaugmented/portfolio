@@ -1,4 +1,5 @@
 import React from "react"
+import TrackVisibility from "react-on-screen"
 import skills from "../data/skills.json"
 import SkillCard from "./SkillCard"
 
@@ -8,23 +9,37 @@ const Skills = () => {
       <h2>What I know</h2>
       <div className="skills-section">
         <h3>Languages</h3>
-        <SkillCard data={skills.languages} />
+        <TrackVisibility key="0" once partialVisibility offset={100}>
+          {({ isVisible }) =>
+            isVisible && <SkillCard data={skills.languages} />
+          }
+        </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>Front End</h3>
-        <SkillCard data={skills.front} />
+        <TrackVisibility key="0" once partialVisibility>
+          {({ isVisible }) => isVisible && <SkillCard data={skills.front} />}
+        </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>Back End</h3>
-        <SkillCard data={skills.back} />
+        <TrackVisibility key="0" once partialVisibility>
+          {({ isVisible }) => isVisible && <SkillCard data={skills.back} />}
+        </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>API's</h3>
-        <SkillCard data={skills.apis} />
+        <TrackVisibility key="0" once partialVisibility>
+          {({ isVisible }) => isVisible && <SkillCard data={skills.apis} />}
+        </TrackVisibility>
       </div>
       <div className="skills-section">
         <h3>Platforms</h3>
-        <SkillCard data={skills.platforms} />
+        <TrackVisibility key="0" once partialVisibility>
+          {({ isVisible }) =>
+            isVisible && <SkillCard data={skills.platforms} />
+          }
+        </TrackVisibility>
       </div>
     </section>
   )
