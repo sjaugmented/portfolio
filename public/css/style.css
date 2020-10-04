@@ -416,6 +416,10 @@ Media Queries
 ------------------------------------------- */
 
 @media only screen and (max-width: 850px) {
+  html {
+    font-size: 14px;
+  }
+
   nav a {
     padding: 0.2rem 1rem;
   }
