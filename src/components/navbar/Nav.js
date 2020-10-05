@@ -29,7 +29,8 @@ const Nav = () => {
                   key={index}
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={item.href}
+                  href="../../public/resume.pdf"
+                  download
                 >
                   {item.text}
                 </a>
