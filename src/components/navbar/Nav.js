@@ -29,7 +29,7 @@ const Nav = () => {
                   key={index}
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="../../public/resume.pdf"
+                  href="https://github.com/sjaugmented/portfolio/blob/master/src/components/navbar/resume.pdf"
                   download
                 >
                   {item.text}
