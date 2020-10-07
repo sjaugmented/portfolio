@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import Routes from "./config/routes"
 // import { Route, Link, Switch } from "react-router-dom"
 import "./App.css"
 import {

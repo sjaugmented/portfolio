@@ -57,8 +57,8 @@ const Menu = ({ open, setOpen }) => {
                 key={index}
                 target="_blank"
                 rel="noopener noreferrer"
-                href={item.href}
-                onClick={() => setOpen(!open)}
+                href="../resume.pdf"
+                download
               >
                 {item.text}
               </a>
