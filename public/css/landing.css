@@ -73,7 +73,10 @@ Skills
   flex-direction: column;
   margin: 0 15px;
   align-items: center;
-  justify-content: center;
+}
+
+.animated p {
+  margin-top: 2px;
 }
 
 .placeholder {
