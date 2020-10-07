@@ -2,103 +2,103 @@
   "languages": [
     {
       "name": "C#",
-      "icon": "https://i.imgur.com/ZBQwyrq.png"
-    },
-    {
-      "name": "HTML",
-      "icon": "https://i.imgur.com/r4Y4CQi.png"
-    },
-    {
-      "name": "CSS",
-      "icon": "https://i.imgur.com/a4G7vzv.png"
+      "icon": "https://i.imgur.com/WcanRDW.png"
     },
     {
       "name": "JavaScript",
-      "icon": "https://i.imgur.com/ScUQvuT.png"
+      "icon": "https://i.imgur.com/0UucSKz.png"
+    },
+    {
+      "name": "HTML",
+      "icon": "https://i.imgur.com/HhXdxkq.png"
+    },
+    {
+      "name": "CSS",
+      "icon": "https://i.imgur.com/0FdUXFr.png"
     },
     {
       "name": "Python",
-      "icon": "https://i.imgur.com/Ui53wjJ.png"
+      "icon": "https://i.imgur.com/YlDFkgJ.png"
     }
   ],
   "front": [
     {
       "name": "React",
-      "icon": "https://i.imgur.com/ZNxz1vd.png"
+      "icon": "https://i.imgur.com/jQVmj9w.png"
     },
     {
       "name": "React Native",
-      "icon": "https://i.imgur.com/ZxtHdTj.png"
+      "icon": "https://i.imgur.com/eLL6fF1.png"
     },
     {
       "name": "Materialize",
-      "icon": "https://i.imgur.com/beocWFi.png"
+      "icon": "https://i.imgur.com/IkTtFS8.png"
     },
     {
       "name": "Ant Design",
-      "icon": "https://i.imgur.com/jdp1dMM.png"
+      "icon": "https://i.imgur.com/sGHv6iV.png"
     }
   ],
   "back": [
     {
       "name": "Node.JS",
-      "icon": "https://i.imgur.com/YmyweW2.png"
+      "icon": "https://i.imgur.com/OG3qbEk.png"
     },
     {
       "name": "MongoDB",
-      "icon": "https://i.imgur.com/ayWrp2i.png"
+      "icon": "https://i.imgur.com/vlASThg.png"
     },
     {
       "name": "Express",
-      "icon": "https://i.imgur.com/Sh5Akqz.png"
+      "icon": "https://i.imgur.com/iuRQM0c.png"
     },
     {
       "name": "SQL",
-      "icon": "https://i.imgur.com/WcA9gaB.png"
+      "icon": "https://i.imgur.com/U2Q9v9y.png"
     }
   ],
   "apis": [
     {
       "name": "Apple Maps",
-      "icon": "https://i.imgur.com/KLO9bUE.png"
+      "icon": "https://i.imgur.com/4nRF2qK.png"
     },
     {
       "name": "Google Auth",
-      "icon": "https://i.imgur.com/YTaBhxn.png"
+      "icon": "https://i.imgur.com/3U4uT5S.png"
     },
     {
       "name": "Google Maps",
-      "icon": "https://i.imgur.com/abq5fNm.png"
+      "icon": "https://i.imgur.com/po3UZCd.png"
     },
     {
       "name": "Google Places",
-      "icon": "https://i.imgur.com/cijLdtV.png"
+      "icon": "https://i.imgur.com/NICLcW1.png"
     },
     {
       "name": "Spotify",
-      "icon": "https://i.imgur.com/1ZKXJev.png"
+      "icon": "https://i.imgur.com/W3SUaWM.png"
     }
   ],
   "platforms": [
     {
       "name": "iOS",
-      "icon": "https://i.imgur.com/lR4SrPL.png"
+      "icon": "https://i.imgur.com/f4qHlb5.png"
     },
     {
       "name": "Unity",
-      "icon": "https://i.imgur.com/4MLOznq.png"
+      "icon": "https://i.imgur.com/BnxQXcE.png"
     },
     {
       "name": "Hololens 2",
-      "icon": "https://i.imgur.com/Lz9C3bq.png"
+      "icon": "https://i.imgur.com/lHfWylx.png"
     },
     {
       "name": "Lightroom",
-      "icon": "https://i.imgur.com/L02le2F.png"
+      "icon": "https://i.imgur.com/T8H28Nv.png"
     },
     {
       "name": "Photoshop",
-      "icon": "https://i.imgur.com/y77PSxX.png"
+      "icon": "https://i.imgur.com/E5LfgAM.png"
     }
   ]
 }
