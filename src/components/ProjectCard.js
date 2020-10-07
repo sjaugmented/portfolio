@@ -59,7 +59,7 @@ const ProjectCard = ({
         {tech.sql && <img src={skills.back[3].icon} alt="sql" />}
       </div>
       <p>{description}</p>
-      <p>{process}</p>
+      {/* <p>{process}</p> */}
       <div className="buttons">
         {appLink && (
           <>
