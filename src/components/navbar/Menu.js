@@ -2,6 +2,7 @@ import React from "react"
 import { nav, social } from "../../data/navItems.json"
 import { Link } from "react-scroll"
 import styled from "styled-components"
+import resume from "../../data/resume.pdf"
 
 const Ul = styled.ul`
   display: none;
@@ -53,14 +54,8 @@ const Menu = ({ open, setOpen }) => {
                 {item.text}
               </Link>
             ) : (
-              <a
-                key={index}
-                target="_blank"
-                rel="noopener noreferrer"
-                href="../resume.pdf"
-                download
-              >
-                {item.text}
+              <a href={resume} download="seth-johnson-cv.pdf">
+                {item.text}⇣
               </a>
             )}
           </li>
