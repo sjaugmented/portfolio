@@ -2,7 +2,9 @@ import React from "react"
 import "../../App.css"
 import Burger from "./Burger"
 import { nav } from "../../data/navItems.json"
-import { Link } from "react-scroll"
+import { Button, Link } from "react-scroll"
+
+import resume from "../../data/resume.pdf"
 
 const Nav = () => {
   return (
@@ -25,14 +27,8 @@ const Nav = () => {
                   {item.text}
                 </Link>
               ) : (
-                <a
-                  key={index}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="../../public/resume.pdf"
-                  download
-                >
-                  {item.text}
+                <a href={resume} download="seth-johnson-cv.pdf">
+                  {item.text}↓
                 </a>
               )}
             </li>
