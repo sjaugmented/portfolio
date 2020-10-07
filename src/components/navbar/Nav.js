@@ -2,7 +2,7 @@ import React from "react"
 import "../../App.css"
 import Burger from "./Burger"
 import { nav } from "../../data/navItems.json"
-import { Button, Link } from "react-scroll"
+import { Link } from "react-scroll"
 
 import resume from "../../data/resume.pdf"
 
@@ -28,7 +28,7 @@ const Nav = () => {
                 </Link>
               ) : (
                 <a href={resume} download="seth-johnson-cv.pdf">
-                  {item.text}↓
+                  {item.text}⇣
                 </a>
               )}
             </li>
