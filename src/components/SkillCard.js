@@ -21,6 +21,7 @@ export default function SkillCard({ data, isVisible, placeHolder, reverse }) {
           !placeHolder ? (
             <animated.div key={index} className="animated" style={props}>
               <img key={index} src={data[index].icon} alt={data[index].name} />
+              <p>{data[index].name}</p>
             </animated.div>
           ) : (
             <div key={index} className="placeholder" style={props}>
