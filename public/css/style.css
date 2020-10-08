@@ -454,7 +454,7 @@ Media Queries
 
 @media only screen and (max-width: 605px) {
   html {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   nav ul {
