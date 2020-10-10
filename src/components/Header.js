@@ -15,7 +15,6 @@ const Header = () => {
   const refTwo = useRef()
   const tagSpring = useSpring({
     ref: refTwo,
-    delay: 300,
     config: { duration: 500, mass: 0.5, tension: 100, friction: 10 },
     from: { opacity: 0 },
     to: { opacity: 1 },
