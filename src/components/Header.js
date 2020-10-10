@@ -8,7 +8,7 @@ const Header = () => {
     ref: refOne,
     delay: 300,
     config: { duration: 500, mass: 250, tension: 100, friction: 10 },
-    from: { opacity: 0, zoom: "75%" },
+    from: { opacity: 0, zoom: "125%" },
     to: { opacity: 1, zoom: "100%" },
   })
 
