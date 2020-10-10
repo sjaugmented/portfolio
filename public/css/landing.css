@@ -2,7 +2,7 @@
 Header
 ------------------------------------------- */
 header {
-  background-image: url("../images/stormtrooperKey.jpg");
+  background-image: url("https://i.imgur.com/a80LLyf.jpg");
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
@@ -24,7 +24,8 @@ header {
 About
 ------------------------------------------- */
 .about {
-  color: black;
+  color: rgb(194, 192, 192);
+  background-color: rgb(37, 37, 37);
 }
 
 .about img {
@@ -53,7 +54,7 @@ Skills
 ------------------------------------------- */
 #skills {
   padding-bottom: 100px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(37, 37, 37);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -117,7 +118,7 @@ Gallery
 
 #gallery {
   padding-bottom: 0;
-  /* background-color: rgb(199, 234, 250); */
+  background-color: rgb(37, 37, 37);
 }
 
 .gallery-heading {
@@ -138,14 +139,14 @@ Gallery
 }
 
 #gallery button {
-  border: 2px solid black;
-  color: black;
+  border: 2px solid rgb(180, 179, 179);
+  color: rgb(70, 69, 69);
 }
 
 #contact {
   padding-top: 24px;
   padding-top: 1.5rem;
-  background-color: rgb(37, 37, 37);
+  background-color: rgb(30, 30, 30);
 }
 
 #siteseal {
@@ -159,7 +160,7 @@ Gallery
   }
 
   header {
-    background-image: url("../images/stormtrooperKey.jpg");
+    background-image: url("https://i.imgur.com/a80LLyf.jpg");
     background-attachment: scroll;
     background-position: center;
     height: 175vw;

@@ -2,19 +2,19 @@
   "languages": [
     {
       "name": "C#",
-      "icon": "https://i.imgur.com/WcanRDW.png"
+      "icon": "https://i.imgur.com/kfrFQ07.png"
     },
     {
       "name": "JavaScript",
-      "icon": "https://i.imgur.com/0UucSKz.png"
+      "icon": "https://i.imgur.com/IRksAPa.png"
     },
     {
       "name": "HTML",
-      "icon": "https://i.imgur.com/HhXdxkq.png"
+      "icon": "https://i.imgur.com/ICDwmwp.png"
     },
     {
       "name": "CSS",
-      "icon": "https://i.imgur.com/0FdUXFr.png"
+      "icon": "https://i.imgur.com/D1XJPKn.png"
     },
     {
       "name": "Python",
@@ -42,7 +42,7 @@
   "back": [
     {
       "name": "Node.JS",
-      "icon": "https://i.imgur.com/OG3qbEk.png"
+      "icon": "https://i.imgur.com/4PgYLNs.png"
     },
     {
       "name": "MongoDB",
@@ -54,13 +54,13 @@
     },
     {
       "name": "SQL",
-      "icon": "https://i.imgur.com/U2Q9v9y.png"
+      "icon": "https://i.imgur.com/Bzyp3Z3.png"
     }
   ],
   "apis": [
     {
       "name": "Apple Maps",
-      "icon": "https://i.imgur.com/4nRF2qK.png"
+      "icon": "https://i.imgur.com/cUnnZrl.png"
     },
     {
       "name": "Google Auth",
@@ -68,11 +68,11 @@
     },
     {
       "name": "Google Maps",
-      "icon": "https://i.imgur.com/po3UZCd.png"
+      "icon": "https://i.imgur.com/p7J7WoM.png"
     },
     {
       "name": "Google Places",
-      "icon": "https://i.imgur.com/NICLcW1.png"
+      "icon": "https://i.imgur.com/duEvyPr.png"
     },
     {
       "name": "Spotify",

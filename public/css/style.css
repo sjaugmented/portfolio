@@ -18,7 +18,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #44545e;
+  color: #d3d4d4;
 }
 
 /* Responsive images */
@@ -223,7 +223,7 @@ button {
 
 button:hover {
   background-color: rgb(3, 195, 209);
-  color: white;
+  color: black;
   font-weight: 600;
 }
 

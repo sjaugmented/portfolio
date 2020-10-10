@@ -16,7 +16,7 @@ const Projects = ({ id }) => {
           {projects.map((project, index) => {
             let style = {}
             if (index % 2 !== 0) {
-              style = { backgroundColor: "rgb(240, 240, 240)" }
+              style = { backgroundColor: "rgb(30, 30, 30)" }
             }
             return (
               <TrackVisibility key={index} once partialVisibility offset={-250}>
