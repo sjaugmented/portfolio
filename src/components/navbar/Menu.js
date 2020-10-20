@@ -54,7 +54,7 @@ const Menu = ({ open, setOpen }) => {
                 {item.text}
               </Link>
             ) : (
-              <a href={resume} download="seth-johnson-cv.pdf">
+              <a href={resume} download="sJohnsonCV.pdf">
                 {item.text}⇣
               </a>
             )}
