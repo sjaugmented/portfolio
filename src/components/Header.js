@@ -13,14 +13,30 @@ const Header = () => {
   })
 
   const refTwo = useRef()
-  const tagSpring = useSpring({
+  const tagSpring1 = useSpring({
     ref: refTwo,
     config: { duration: 500, mass: 0.5, tension: 100, friction: 10 },
     from: { opacity: 0 },
     to: { opacity: 1 },
   })
 
-  useChain([refOne, refTwo])
+  const refThree = useRef()
+  const tagSpring2 = useSpring({
+    ref: refThree,
+    config: { duration: 500, mass: 0.5, tension: 100, friction: 10 },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  })
+
+  const refFour = useRef()
+  const tagSpring3 = useSpring({
+    ref: refFour,
+    config: { duration: 500, mass: 0.5, tension: 100, friction: 10 },
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  })
+
+  useChain([refOne, refTwo, refThree, refFour])
 
   return (
     <header className="vertical-center">
@@ -30,11 +46,14 @@ const Header = () => {
             <a href="#contact">Seth Johnson</a>
           </h1>
         </animated.div>
-        <animated.div style={tagSpring}>
-          <h2>
-            A Software Engineer Who <span className="underline">Won't</span>{" "}
-            Kidnap and Murder You
-          </h2>
+        <animated.div className="subtitle" style={tagSpring1}>
+          <h2>Full Stack</h2>
+        </animated.div>
+        <animated.div className="subtitle" style={tagSpring2}>
+          <h2>&</h2>
+        </animated.div>
+        <animated.div className="subtitle" style={tagSpring3}>
+          <h2>Creative</h2>
         </animated.div>
       </div>
     </header>

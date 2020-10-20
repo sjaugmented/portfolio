@@ -161,6 +161,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.subtitle h2 {
+  margin-bottom: 0;
+}
+
 nav {
   position: fixed;
   top: 0;
