@@ -23,6 +23,7 @@ const Header = () => {
   const refThree = useRef()
   const tagSpring2 = useSpring({
     ref: refThree,
+    delay: 200,
     config: { duration: 500, mass: 0.5, tension: 100, friction: 10 },
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -47,14 +48,14 @@ const Header = () => {
           </h1>
         </animated.div>
         <animated.div className="subtitle" style={tagSpring1}>
-          <h2>Full Stack</h2>
+          <h2>A Full Stack Storyteller</h2>
         </animated.div>
-        <animated.div className="subtitle" style={tagSpring2}>
-          <h2>&</h2>
-        </animated.div>
-        <animated.div className="subtitle" style={tagSpring3}>
+        {/* <animated.div className="subtitle" style={tagSpring2}>
+          <h2>With a narrative</h2>
+        </animated.div> */}
+        {/* <animated.div className="subtitle" style={tagSpring3}>
           <h2>Creative</h2>
-        </animated.div>
+        </animated.div> */}
       </div>
     </header>
   )
