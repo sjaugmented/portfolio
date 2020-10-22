@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "../projectCard.css"
 import skills from "../data/skills.json"
 
@@ -14,6 +14,26 @@ const ProjectCard = ({
   tech,
   isVisible,
 }) => {
+  const [why, setWhy] = useState(false)
+  const [challenge, setChallenge] = useState(false)
+  const [how, setHow] = useState(false)
+
+  const handleMouseEnters = (hover) => {
+    // hover === why ? setWhy(true) : setWhy(false)
+    // hover === challenge ? setChallenge(true) : setChallenge(false)
+    // hover === how ? setHow(true) : setHow(false)
+
+    if (hover === why) setWhy(true)
+    else if (hover === challenge) setChallenge(true)
+    else setHow(true)
+  }
+
+  const handleMouseLeaves = () => {
+    setWhy(false)
+    setChallenge(false)
+    setHow(false)
+  }
+
   return (
     <section
       className={
@@ -58,7 +78,40 @@ const ProjectCard = ({
         {tech.express && <img src={skills.back[2].icon} alt="express" />}
         {tech.sql && <img src={skills.back[3].icon} alt="sql" />}
       </div>
-      <p>{description}</p>
+      <div className="details">
+        <section
+          className="why-how"
+          onMouseEnter={() => handleMouseEnters(why)}
+          onMouseLeave={handleMouseLeaves}
+        >
+          <h3>The</h3>
+          <h2>Why</h2>
+        </section>
+        <section
+          className="why-how"
+          onMouseEnter={() => handleMouseEnters(challenge)}
+          onMouseLeave={handleMouseLeaves}
+        >
+          <h3>The</h3>
+          <h2>Challenge</h2>
+        </section>
+        <section
+          className="why-how"
+          onMouseEnter={() => handleMouseEnters(how)}
+          onMouseLeave={handleMouseLeaves}
+        >
+          <h3>The</h3>
+          <h2>How</h2>
+        </section>
+      </div>
+      <div className="info-panel">
+        {!why && !challenge && !how && <p>{description}</p>}
+        {why && <p>This explains why I did this project...</p>}
+        {challenge && (
+          <p>This explains the primary challenge of this project...</p>
+        )}
+        {how && <p>This explains how I overcame that challenge...</p>}
+      </div>
       {/* <p>{process}</p> */}
       <div className="buttons">
         {appLink && (

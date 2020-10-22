@@ -238,6 +238,36 @@ button:hover {
 }
 
 /* ----------------------------------------
+Projects
+------------------------------------------- */
+
+.details {
+  display: flex;
+  justify-content: center;
+  margin: -100px 0 -150px 0;
+  /* background-color: red; */
+}
+
+.why-how {
+  align-items: center;
+  /* background-color: black; */
+}
+
+.why-how:hover {
+  color: rgb(3, 195, 209);
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.why-how h3 {
+  margin-bottom: -10px;
+}
+
+.info-panel {
+  height: 200px;
+}
+
+/* ----------------------------------------
 Forms
 ------------------------------------------- */
 form {
