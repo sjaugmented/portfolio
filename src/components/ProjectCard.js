@@ -3,30 +3,24 @@ import "../projectCard.css"
 import skills from "../data/skills.json"
 
 const ProjectCard = ({ style, project, index, isVisible }) => {
-  const [whyVisible, setWhyVis] = useState(false)
-  const [challengeVisible, setChallengeVis] = useState(false)
-  const [howVisible, setHowVis] = useState(false)
+  const [info, setInfo] = useState({
+    why: false,
+    challenge: false,
+    how: false,
+  })
 
-  const handleMouseEnters = (hover) => {
-    if (hover === whyVisible) {
-      setWhyVis(true)
-      setChallengeVis(false)
-      setHowVis(false)
-    } else if (hover === challengeVisible) {
-      setWhyVis(false)
-      setChallengeVis(true)
-      setHowVis(false)
-    } else if (hover === howVisible) {
-      setWhyVis(false)
-      setChallengeVis(false)
-      setHowVis(true)
+  const handleMouseEnters = (state) => {
+    if (state === "why") {
+      setInfo({ why: true })
+    } else if (state === "challenge") {
+      setInfo({ challenge: true })
+    } else {
+      setInfo({ how: true })
     }
   }
 
   const handleMouseLeaves = () => {
-    setWhyVis(false)
-    setChallengeVis(false)
-    setHowVis(false)
+    setInfo({ why: false, challenge: false, how: false })
   }
 
   return (
@@ -91,8 +85,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            console.log("why?")
-            handleMouseEnters(whyVisible)
+            handleMouseEnters("why")
           }}
           onMouseLeave={handleMouseLeaves}
         >
@@ -102,8 +95,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            console.log("challenge?")
-            handleMouseEnters(challengeVisible)
+            handleMouseEnters("challenge")
           }}
           onMouseLeave={handleMouseLeaves}
         >
@@ -113,8 +105,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            console.log("how?")
-            handleMouseEnters(howVisible)
+            handleMouseEnters("how")
           }}
           onMouseLeave={handleMouseLeaves}
         >
@@ -123,12 +114,10 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         </section>
       </div>
       <div className="info-panel">
-        {!whyVisible && !challengeVisible && !howVisible && (
-          <p>{project.summary}</p>
-        )}
-        {whyVisible && <p>{project.why}</p>}
-        {challengeVisible && <p>{project.challenge}</p>}
-        {howVisible && <p>{project.how}</p>}
+        {!info.why && !info.challenge && !info.how && <p>{project.summary}</p>}
+        {info.why && <p>{project.why}</p>}
+        {info.challenge && <p>{project.challenge}</p>}
+        {info.how && <p>{project.how}</p>}
       </div>
       <div className="buttons">
         {project.appLink && (
