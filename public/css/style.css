@@ -264,7 +264,13 @@ Projects
 }
 
 .info-panel {
-  height: 200px;
+  height: 100px;
+  display: flex;
+  align-content: center;
+}
+
+.info-panel p {
+  margin: auto;
 }
 
 /* ----------------------------------------
