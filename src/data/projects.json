@@ -3,7 +3,7 @@
     "name": "TravelBook",
     "imgUrl": "https://i.imgur.com/JYdWeK1.png",
     "summary": "The ultimate travel companion (WIP).",
-    "why": "As a frequent traveler, I've always wanted a fun, simple way to data-mine my trips. How many miles did I travel by car? By foot? By horse??? What's the percentage of cities in Italy or Greece that I've visited? How much of the America's have I seen? TravelBook will track everything about your trips - miles traveled, types of transportation used, types of activites, favorite foods and places, create albums of photo memories, percentage of a country/region visited, etc.",
+    "why": "As a frequent traveler, I've always wanted a fun, simple way to data-mine my trips. How many miles did I travel by car? By foot? By train? What's the percentage of cities in Italy or Greece that I've visited? How much of the America's have I seen? TravelBook will track everything about your trips - miles traveled, types of transportation used, types of activites, favorite foods and places, create albums of photo memories, percentage of a country/region visited, etc.",
     "challenge": "Usability is key. It needs to be simple and straight-forward. It needs effortless location tracking, map management, the ability to easily select and add photos to trips. You could do all of this with a web app, but it's not exactly the most usable, simple, or straight-forward experience. And if this isn't at minimum those three things, no one's going to want to use it.",
     "how": "The solution was React Native. This combined everything we learned over the course of a 12 week SEI program, plus a little extra. Suddenly all the core functionality from location tracking to image management became ten times easier to implement. Utiziling Apple Maps with Google API's Places and People - and even some recursive functionality - I've very proud of how this is shaping up and looking forward to the day we can present this to the App Store for consideration.",
     "appLink": "",
@@ -24,10 +24,10 @@
   {
     "name": "Vote-ify",
     "imgUrl": "https://i.imgur.com/q1kmvua.png",
-    "summary": "Vote-ify brings Democracy to playlists. Using the Spotify API, users can listen to and contribute songs to 12 playlists, all curated and managed by the community. When a user suggests a song, it is sent into a queue where it has two weeks to earn enough votes to be officially added to the playlist.",
+    "summary": "Playlists curated by a community.",
     "why": "",
     "challenge": "",
-    "how": "Working with the Spotify API was a challenge. It might be straight-forward for programmers with more than 9 weeks experience, but we definitely had some hurdles to overcome - mainly working with access/refresh tokens and figuring out the best way to hit the query endpoints. In the end we were able to hit the MVP we set out to create, and are continuing to refine this and add more functionality.",
+    "how": "Using the Spotify API, users can listen to and contribute songs to 12 playlists, all curated and managed by the community. When a user suggests a song, it is sent into a queue where it has two weeks to earn enough votes to be officially added to the playlist. Working with the Spotify API was a challenge. It might be straight-forward for programmers with more than 9 weeks experience, but we definitely had some hurdles to overcome - mainly working with access/refresh tokens and figuring out the best way to hit the query endpoints. In the end we were able to hit the MVP we set out to create, and are continuing to refine this and add more functionality.",
     "appLink": "https://vote-ify.herokuapp.com/",
     "repoLink": "https://github.com/sjaugmented/project3-api",
     "tech": {
@@ -44,10 +44,10 @@
   {
     "name": "Uno",
     "imgUrl": "https://i.imgur.com/5tKEvOS.png",
-    "summary": "My first ever solo JS project. I wanted to create something that was fun, simple yet stylish, and accurately modeled the rules of one of my favorite card games.",
-    "why": "Uno is a classic card game and I was intrigued by the challenge of turning it into a fun web app.",
+    "summary": "A fun, browser-based card game.",
+    "why": "My first ever solo JS project. I wanted to create something that was fun, simple yet stylish, and accurately modeled the rules of one of my favorite card games.",
     "challenge": "The biggest challenge was making the CPU feel as human as possible, complete with delays for decision making and a varying strategy of when to play what cards.",
-    "how": "The CPU even has a \"vengeance factor,\" remembering if and when the player hit it with a draw card, and responding in kind if it has draw cards of its own.",
+    "how": "The CPU has a \"vengeance factor,\" remembering if and when the player hit it with a draw card, and responding in kind if it has draw cards of its own.",
     "appLink": "https://sjaugmented.github.io/Project1-Uno/",
     "repoLink": "https://github.com/sjaugmented/Project1-Uno",
     "tech": {
