@@ -20,7 +20,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
       }
       style={style}
     >
-      <h3 className="project-name">{project.name}</h3>
+      <h2 className="project-name">{project.name}</h2>
       <div className="logos api">
         {project.tech.ios && (
           <img src={skills.platforms[0].icon} alt="ios platform" />

@@ -8,7 +8,7 @@ const Projects = ({ id }) => {
   return (
     <section id="gallery">
       <div className="wrap">
-        <h2 className="gallery-heading">What I've Done</h2>
+        <h1 className="gallery-heading">What I've Done</h1>
         <div>
           {projects.map((project, index) => {
             if (project.printIt) {

@@ -9,7 +9,7 @@ const About = () => {
           src="https://i.imgur.com/5KPInk0.jpg"
           alt="my selfie"
         />
-        <h2>Who I Am</h2>
+        <h1>Who I Am</h1>
         <p>
           My life began with storytelling. It was what always interested me.
           This lead me from writing to screenwriting to eventually combining my

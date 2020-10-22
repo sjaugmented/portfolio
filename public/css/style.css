@@ -251,6 +251,7 @@ Projects
 .why-how {
   align-items: center;
   /* background-color: black; */
+  cursor: default;
 }
 
 .why-how:hover {
@@ -260,6 +261,11 @@ Projects
 
 .why-how h3 {
   margin-bottom: -10px;
+  font-weight: 300;
+}
+
+.why-how h2 {
+  font-weight: 300;
 }
 
 .info-panel {

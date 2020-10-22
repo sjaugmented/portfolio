@@ -6,7 +6,7 @@ import SkillCard from "./SkillCard"
 const Skills = () => {
   return (
     <section id="skills">
-      <h2>What I know</h2>
+      <h1>What I know</h1>
       <div className="skills-section">
         <h3>Languages</h3>
         <TrackVisibility key="0" once partialVisibility offset={100}>
