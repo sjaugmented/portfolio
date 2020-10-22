@@ -50,7 +50,7 @@
     "summary": "A fun, browser-based card game.",
     "why": "My first ever solo JS project. I wanted to create something that was fun, simple yet stylish, and accurately modeled the rules of one of my favorite card games.",
     "challenge": "Making the CPU feel as human as possible, complete with delays for decision making and a varying strategy of when to play what cards.",
-    "how": "First, harness the power of setTimeout(), with a delay randomizer based off the size of the CPU's hand so it looks like it's considering its options. Then there's the \"vengeance factor\" -  the CPU keeps track of when the player plays face card vs a number card, remembering when the player hits it with a draw card, and responding in kind if it has draw cards of its own. It also plays more aggressively the smaller the player's hand is.",
+    "how": "First, harness the power of setTimeout() with a delay randomizer based off the size of the CPU's hand so it looks like it's considering its options. Then there's the \"vengeance factor\" -  the CPU keeps track of when the player plays face card vs a number card, remembering when the player hits it with a draw card, and responding in kind if it has draw cards of its own. It also plays more aggressively the smaller the player's hand is.",
     "appLink": "https://sjaugmented.github.io/Project1-Uno/",
     "repoLink": "https://github.com/sjaugmented/Project1-Uno",
     "tech": {

@@ -23,7 +23,7 @@ body {
 
 /* Responsive images */
 img {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .underline {
@@ -533,8 +533,16 @@ Media Queries
     font-size: 3rem;
   }
 
+  /* .project-card {
+    width: 80vw;
+  } */
+
+  .project-img img {
+    width: 100%;
+  }
+
   .logos img {
-    height: 40px;
+    height: 30px;
   }
 
   .buttons {
@@ -581,39 +589,21 @@ Media Queries
     padding: 0 30px;
   }
 
-  /* ----------------------------------------
-Projects
-------------------------------------------- */
-
-  .details {
+  /* .details {
     display: flex;
     justify-content: center;
-    margin: -100px 0 -150px 0;
-    /* background-color: red; */
-  }
+    margin: -100px 10vw -150px 10vw;
+  } */
 
-  .why-how {
+  /* .why-how {
     align-items: center;
-    /* background-color: black; */
-  }
-
-  .why-how:hover {
-    color: rgb(3, 195, 209);
-    cursor: pointer;
-    transition: 0.25s ease-in-out;
-  }
-
-  .why-how h3 {
-    margin-bottom: -10px;
-  }
+  } */
 
   .info-panel {
     height: 43vh;
-    /* display: flex; */
-    align-content: center;
   }
 
-  .info-panel p {
+  /* .info-panel p {
     margin: auto;
-  }
+  } */
 }

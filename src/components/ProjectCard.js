@@ -41,7 +41,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
           <img src={skills.apis[4].icon} alt="spotify api" />
         )}
       </div>
-      <img src={project.imgUrl} alt={index} />
+      <img src={project.imgUrl} alt={index} className="project-img" />
       <div className="logos tech">
         {project.tech.cSharp && (
           <img src={skills.languages[0].icon} alt="c sharp" />

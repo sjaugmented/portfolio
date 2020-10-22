@@ -14,7 +14,7 @@ const Ul = styled.ul`
       padding: 24px 10px;
     }
     flex-flow: column nowrap;
-    background-color: rgb(100, 100, 100);
+    background-color: rgb(10, 10, 10);
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
     top: -15px;
