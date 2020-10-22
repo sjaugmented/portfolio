@@ -3,24 +3,30 @@ import "../projectCard.css"
 import skills from "../data/skills.json"
 
 const ProjectCard = ({ style, project, index, isVisible }) => {
-  const [showWhy, setShowWhy] = useState(false)
-  const [showChallenge, setShowChallenge] = useState(false)
-  const [showHow, setShowHow] = useState(false)
+  const [whyVisible, setWhyVis] = useState(false)
+  const [challengeVisible, setChallengeVis] = useState(false)
+  const [howVisible, setHowVis] = useState(false)
 
   const handleMouseEnters = (hover) => {
-    // hover === why ? setWhy(true) : setWhy(false)
-    // hover === challenge ? setChallenge(true) : setChallenge(false)
-    // hover === how ? setHow(true) : setHow(false)
-
-    if (hover === showWhy) setShowWhy(true)
-    else if (hover === showChallenge) setShowChallenge(true)
-    else setShowHow(true)
+    if (hover === whyVisible) {
+      setWhyVis(true)
+      setChallengeVis(false)
+      setHowVis(false)
+    } else if (hover === challengeVisible) {
+      setWhyVis(false)
+      setChallengeVis(true)
+      setHowVis(false)
+    } else if (hover === howVisible) {
+      setWhyVis(false)
+      setChallengeVis(false)
+      setHowVis(true)
+    }
   }
 
   const handleMouseLeaves = () => {
-    setShowWhy(false)
-    setShowChallenge(false)
-    setShowHow(false)
+    setWhyVis(false)
+    setChallengeVis(false)
+    setHowVis(false)
   }
 
   return (
@@ -84,7 +90,10 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
       <div className="details">
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(showWhy)}
+          onMouseEnter={() => {
+            console.log("why?")
+            handleMouseEnters(whyVisible)
+          }}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -92,7 +101,10 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         </section>
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(showChallenge)}
+          onMouseEnter={() => {
+            console.log("challenge?")
+            handleMouseEnters(challengeVisible)
+          }}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -100,7 +112,10 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         </section>
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(showHow)}
+          onMouseEnter={() => {
+            console.log("how?")
+            handleMouseEnters(howVisible)
+          }}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -108,10 +123,12 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         </section>
       </div>
       <div className="info-panel">
-        {!showWhy && !showChallenge && !showHow && <p>{project.description}</p>}
-        {showWhy && <p>{project.why}</p>}
-        {showChallenge && <p>{project.challenge}</p>}
-        {showHow && <p>{project.how}</p>}
+        {!whyVisible && !challengeVisible && !howVisible && (
+          <p>{project.summary}</p>
+        )}
+        {whyVisible && <p>{project.why}</p>}
+        {challengeVisible && <p>{project.challenge}</p>}
+        {howVisible && <p>{project.how}</p>}
       </div>
       <div className="buttons">
         {project.appLink && (
