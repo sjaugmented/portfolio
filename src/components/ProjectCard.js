@@ -9,17 +9,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
     how: false,
   })
 
-  const handleMouseEnters = (state) => {
-    if (state === "why") {
-      setInfo({ why: true })
-    } else if (state === "challenge") {
-      setInfo({ challenge: true })
-    } else {
-      setInfo({ how: true })
-    }
-  }
-
-  const handleMouseLeaves = () => {
+  const resetInfoDisplays = () => {
     setInfo({ why: false, challenge: false, how: false })
   }
 
@@ -85,9 +75,9 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            handleMouseEnters("why")
+            setInfo({ why: true })
           }}
-          onMouseLeave={handleMouseLeaves}
+          onMouseLeave={resetInfoDisplays}
         >
           <h3>The</h3>
           <h2>Why</h2>
@@ -95,9 +85,9 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            handleMouseEnters("challenge")
+            setInfo({ challenge: true })
           }}
-          onMouseLeave={handleMouseLeaves}
+          onMouseLeave={resetInfoDisplays}
         >
           <h3>The</h3>
           <h2>Challenge</h2>
@@ -105,9 +95,9 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
         <section
           className="why-how"
           onMouseEnter={() => {
-            handleMouseEnters("how")
+            setInfo({ how: true })
           }}
-          onMouseLeave={handleMouseLeaves}
+          onMouseLeave={resetInfoDisplays}
         >
           <h3>The</h3>
           <h2>How</h2>
