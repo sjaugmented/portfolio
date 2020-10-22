@@ -20,17 +20,7 @@ const Projects = ({ id }) => {
             }
             return (
               <TrackVisibility key={index} once partialVisibility offset={-250}>
-                <ProjectCard
-                  style={style}
-                  key={index}
-                  imgSrc={project.imgUrl}
-                  name={project.name}
-                  description={project.description}
-                  process={project.process}
-                  appLink={project.appLink}
-                  repoLink={project.repoLink}
-                  tech={project.tech}
-                />
+                <ProjectCard style={style} key={index} project={project} />
               </TrackVisibility>
             )
           })}

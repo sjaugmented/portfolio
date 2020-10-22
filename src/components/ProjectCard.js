@@ -2,36 +2,25 @@ import React, { useState } from "react"
 import "../projectCard.css"
 import skills from "../data/skills.json"
 
-const ProjectCard = ({
-  style,
-  imgSrc,
-  index,
-  name,
-  description,
-  process,
-  appLink,
-  repoLink,
-  tech,
-  isVisible,
-}) => {
-  const [why, setWhy] = useState(false)
-  const [challenge, setChallenge] = useState(false)
-  const [how, setHow] = useState(false)
+const ProjectCard = ({ style, project, index, isVisible }) => {
+  const [showWhy, setShowWhy] = useState(false)
+  const [showChallenge, setShowChallenge] = useState(false)
+  const [showHow, setShowHow] = useState(false)
 
   const handleMouseEnters = (hover) => {
     // hover === why ? setWhy(true) : setWhy(false)
     // hover === challenge ? setChallenge(true) : setChallenge(false)
     // hover === how ? setHow(true) : setHow(false)
 
-    if (hover === why) setWhy(true)
-    else if (hover === challenge) setChallenge(true)
-    else setHow(true)
+    if (hover === showWhy) setShowWhy(true)
+    else if (hover === showChallenge) setShowChallenge(true)
+    else setShowHow(true)
   }
 
   const handleMouseLeaves = () => {
-    setWhy(false)
-    setChallenge(false)
-    setHow(false)
+    setShowWhy(false)
+    setShowChallenge(false)
+    setShowHow(false)
   }
 
   return (
@@ -41,47 +30,61 @@ const ProjectCard = ({
       }
       style={style}
     >
-      <h3 className="project-name">{name}</h3>
+      <h3 className="project-name">{project.name}</h3>
       <div className="logos api">
-        {tech.ios && <img src={skills.platforms[0].icon} alt="ios platform" />}
-        {tech.appleMaps && (
+        {project.tech.ios && (
+          <img src={skills.platforms[0].icon} alt="ios platform" />
+        )}
+        {project.tech.appleMaps && (
           <img src={skills.apis[0].icon} alt="apple maps api" />
         )}
-        {tech.googleAuth && (
+        {project.tech.googleAuth && (
           <img src={skills.apis[1].icon} alt="google auth api" />
         )}
-        {tech.googleMaps && (
+        {project.tech.googleMaps && (
           <img src={skills.apis[2].icon} alt="google maps api" />
         )}
-        {tech.googlePlaces && (
+        {project.tech.googlePlaces && (
           <img src={skills.apis[3].icon} alt="google places api" />
         )}
-        {tech.spotify && <img src={skills.apis[4].icon} alt="spotify api" />}
+        {project.tech.spotify && (
+          <img src={skills.apis[4].icon} alt="spotify api" />
+        )}
       </div>
-      <img src={imgSrc} alt={index} />
+      <img src={project.imgUrl} alt={index} />
       <div className="logos tech">
-        {tech.cSharp && <img src={skills.languages[0].icon} alt="c sharp" />}
-        {tech.html && <img src={skills.languages[1].icon} alt="html" />}
-        {tech.css && <img src={skills.languages[2].icon} alt="css" />}
-        {tech.js && <img src={skills.languages[3].icon} alt="javascript" />}
-        {tech.python && <img src={skills.languages[4].icon} alt="python" />}
-
-        {tech.react && <img src={skills.front[0].icon} alt="react" />}
-        {tech.native && <img src={skills.front[1].icon} alt="react native" />}
-        {tech.materialize && (
+        {project.tech.cSharp && (
+          <img src={skills.languages[0].icon} alt="c sharp" />
+        )}
+        {project.tech.js && (
+          <img src={skills.languages[3].icon} alt="javascript" />
+        )}
+        {project.tech.css && <img src={skills.languages[2].icon} alt="css" />}
+        {project.tech.python && (
+          <img src={skills.languages[4].icon} alt="python" />
+        )}
+        {project.tech.html && <img src={skills.languages[1].icon} alt="html" />}
+        {project.tech.react && <img src={skills.front[0].icon} alt="react" />}
+        {project.tech.native && (
+          <img src={skills.front[1].icon} alt="react native" />
+        )}
+        {project.tech.materialize && (
           <img src={skills.front[2].icon} alt="materialize" />
         )}
-        {tech.ant && <img src={skills.front[3].icon} alt="ant design" />}
-
-        {tech.node && <img src={skills.back[0].icon} alt="node.js" />}
-        {tech.mongo && <img src={skills.back[1].icon} alt="mongoDB" />}
-        {tech.express && <img src={skills.back[2].icon} alt="express" />}
-        {tech.sql && <img src={skills.back[3].icon} alt="sql" />}
+        {project.tech.ant && (
+          <img src={skills.front[3].icon} alt="ant design" />
+        )}
+        {project.tech.node && <img src={skills.back[0].icon} alt="node.js" />}
+        {project.tech.mongo && <img src={skills.back[1].icon} alt="mongoDB" />}
+        {project.tech.express && (
+          <img src={skills.back[2].icon} alt="express" />
+        )}
+        {project.tech.sql && <img src={skills.back[3].icon} alt="sql" />}
       </div>
       <div className="details">
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(why)}
+          onMouseEnter={() => handleMouseEnters(showWhy)}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -89,7 +92,7 @@ const ProjectCard = ({
         </section>
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(challenge)}
+          onMouseEnter={() => handleMouseEnters(showChallenge)}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -97,7 +100,7 @@ const ProjectCard = ({
         </section>
         <section
           className="why-how"
-          onMouseEnter={() => handleMouseEnters(how)}
+          onMouseEnter={() => handleMouseEnters(showHow)}
           onMouseLeave={handleMouseLeaves}
         >
           <h3>The</h3>
@@ -105,23 +108,20 @@ const ProjectCard = ({
         </section>
       </div>
       <div className="info-panel">
-        {!why && !challenge && !how && <p>{description}</p>}
-        {why && <p>This explains why I did this project...</p>}
-        {challenge && (
-          <p>This explains the primary challenge of this project...</p>
-        )}
-        {how && <p>This explains how I overcame that challenge...</p>}
+        {!showWhy && !showChallenge && !showHow && <p>{project.description}</p>}
+        {showWhy && <p>{project.why}</p>}
+        {showChallenge && <p>{project.challenge}</p>}
+        {showHow && <p>{project.how}</p>}
       </div>
-      {/* <p>{process}</p> */}
       <div className="buttons">
-        {appLink && (
+        {project.appLink && (
           <>
-            <a target="_blank" rel="noopener noreferrer" href={appLink}>
+            <a target="_blank" rel="noopener noreferrer" href={project.appLink}>
               <button>Check out the app</button>
             </a>
           </>
         )}
-        <a target="_blank" rel="noopener noreferrer" href={repoLink}>
+        <a target="_blank" rel="noopener noreferrer" href={project.repoLink}>
           <button>Check out the code</button>
         </a>
       </div>
