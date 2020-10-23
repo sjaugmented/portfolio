@@ -12,7 +12,7 @@
     },
     {
       "href": "#about",
-      "text": "My Story",
+      "text": "Story",
       "link": "about"
     },
     {
@@ -34,7 +34,7 @@
     },
     {
       "name": "LinkedIn",
-      "href": "https://www.linkedin.com/in/cineseth",
+      "href": "https://www.linkedin.com/in/sethrj",
       "icon": "fa fa-linkedin",
       "aria-hidden": "true"
     },

@@ -11,22 +11,24 @@ const About = () => {
         />
         <h1>Who I Am</h1>
         <p>
-          My life began with storytelling. It was what always interested me.
-          This lead me from writing to screenwriting to eventually combining my
-          love of story with my love of photography and Mastering in
-          Cinematography and working as a professional Cinematographer for over
-          a decade.
+          As human beings, <strong>we are built on stories</strong>. From the
+          minutia of a morning commute to the vast scope of our careers,
+          relationships, and lives, our entire identity is built around a
+          narrative, a single thread that unifies everything. That's the
+          question that needs to drive how we think about designing tech: what's
+          the thread? What is the journey we want the user to take? What's the
+          journey <em>they</em> want to go on?
+        </p>
+        <p>
+          My life began with storytelling. It was what always interested me. I
+          started as a writer then combined my love of story with my love of
+          photography and Mastered in Cinematography, working as a professional
+          Cinematographer for over a decade.
         </p>
 
-        <p>
-          Recently I wanted to challenge myself with a new skill set. The world
-          runs on software and I’ve always wanted to understand and become
-          proficient with the languages that make our modern world go round.
-          Covid2020 gave me the perfect opportunity to knuckle down and do just
-          that.
-        </p>
+        <p>Now I write code.</p>
 
-        <p>
+        {/* <p>
           Creative problem solving and team management are the pillars of my
           professional experience. I thrive in high stress environments and
           maintain a calm, relaxed, goal-focused attitude. I bring the same
@@ -34,19 +36,19 @@ const About = () => {
           the feeling we want to evoke in the user; what are the limiting
           factors of the project; what’s the best way forward? These are the
           central questions that define everything I do.
-        </p>
+        </p> */}
 
         <p>
           When I’m not programming or shooting features or commercials, you can
-          find me hiking, running, or relaxing with the occasional video game or
-          movie.
+          find me hiking, perfecting my homemade cold-brew (of course you can
+          try it), or chilling with a good story - no matter where it might come
+          from.
         </p>
 
         <p>
-          If you are looking for a creative Full Stack developer with an eye
-          toward user experience and narrative design,{" "}
-          <a href="#contact">we should talk</a>. We probably have a lot in
-          common.
+          If you are looking for a creative full stack developer with an eye
+          toward user experience and narrative design, we should talk. We
+          probably have a lot in common.
         </p>
       </article>
     </section>

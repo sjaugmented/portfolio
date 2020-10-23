@@ -49,7 +49,7 @@ class Contact extends Component {
     return (
       <section id="contact">
         <div className="wrap">
-          <h1 className="form-header">Drop me a line</h1>
+          <h1 className="form-header">Say Hi</h1>
           <form className="contact" onSubmit={this.handleSubmit}>
             <input
               type="text"
