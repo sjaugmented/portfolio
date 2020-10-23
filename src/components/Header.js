@@ -48,7 +48,7 @@ const Header = () => {
           </h1>
         </animated.div>
         <animated.div className="subtitle" style={tagSpring1}>
-          <h2>Full Stack + Storytelling</h2>
+          <h2>Full Stack Storyteller</h2>
         </animated.div>
         {/* <animated.div className="subtitle" style={tagSpring2}>
           <h2>With a narrative</h2>
