@@ -26,7 +26,7 @@
     "name": "Vote-ify",
     "printIt": true,
     "imgUrl": "https://i.imgur.com/q1kmvua.png",
-    "summary": "Community curated playlists using the Spotify API.",
+    "summary": "Playlists curated by the community, using the Spotify API.",
     "why": "Everyone loves sharing playlists (or almost everyone does). And everyone loves curated suggestions. We thought it would be cool to combine the two - allow a community to curate their own playlists. Instead of being told what's good, let democracy decide.",
     "challenge": "How to implement voting that couldn't easily be gamed. This was our first time working with React and components and figuring out how to log votes that would persist across component re-renders.",
     "how": "When a user suggests a song, it is sent into a queue where it has two weeks to earn enough votes to be officially added to the playlist. Users cannot vote for their own songs, they can vote for each song only once, and a combination of browser cookies, local storage, and database management record the user's votes, allowing them to persist across sessions.",
