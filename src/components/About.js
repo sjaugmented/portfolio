@@ -12,7 +12,7 @@ const About = () => {
         <h1>Who I Am</h1>
         <p>
           As human beings, <strong>we are built on stories</strong>. From the
-          minutia of a morning commute to the vast scope of our careers,
+          minutiae of a morning commute to the vast scope of our careers,
           relationships, and lives, our entire identity is built around a
           narrative, a single thread that unifies everything. That's the
           question that needs to drive how we think about designing tech: what's
