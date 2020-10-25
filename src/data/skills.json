@@ -81,10 +81,6 @@
   ],
   "platforms": [
     {
-      "name": "iOS",
-      "icon": "https://i.imgur.com/f4qHlb5.png"
-    },
-    {
       "name": "Unity",
       "icon": "https://i.imgur.com/BnxQXcE.png"
     },
@@ -93,12 +89,20 @@
       "icon": "https://i.imgur.com/lHfWylx.png"
     },
     {
-      "name": "Lightroom",
-      "icon": "https://i.imgur.com/T8H28Nv.png"
+      "name": "Safari",
+      "icon": "https://i.imgur.com/RQUAaRp.png"
     },
     {
-      "name": "Photoshop",
-      "icon": "https://i.imgur.com/E5LfgAM.png"
+      "name": "Chrome",
+      "icon": "https://i.imgur.com/cLN6WSP.png"
+    },
+    {
+      "name": "Firefox",
+      "icon": "https://i.imgur.com/dSMv0y3.png"
+    },
+    {
+      "name": "iOS",
+      "icon": "https://i.imgur.com/f4qHlb5.png"
     }
   ]
 }
