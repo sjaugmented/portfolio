@@ -61,6 +61,15 @@ Skills
   align-items: center;
 }
 
+.frameworks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.spacer {
+  width: 100px;
+}
+
 .skills-list {
   display: flex;
   /* flex-direction: row; */
@@ -176,5 +185,17 @@ Gallery
     margin: -20px 0 50px 0;
     /* align-items: center; */
     justify-content: space-evenly;
+  }
+
+  /* .frameworks {
+    flex-direction: column;
+  } */
+
+  .spacer {
+    width: 0px;
+  }
+
+  .animated {
+    margin-right: 20px;
   }
 }

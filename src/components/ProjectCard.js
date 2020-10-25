@@ -83,7 +83,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
           <h2>Why</h2>
         </section>
         <section
-          className="why-how"
+          className="why-how challenge"
           onMouseEnter={() => {
             setInfo({ challenge: true })
           }}

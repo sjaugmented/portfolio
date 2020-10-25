@@ -594,15 +594,17 @@ Media Queries
     padding: 0 30px;
   }
 
-  /* .details {
-    display: flex;
+  .details {
     justify-content: center;
-    margin: -100px 10vw -150px 10vw;
-  } */
+  }
 
-  /* .why-how {
-    align-items: center;
-  } */
+  .why-how {
+    width: 60%;
+  }
+
+  .challenge h2 {
+    margin-left: -6vw;
+  }
 
   .info-panel {
     height: 43vh;
