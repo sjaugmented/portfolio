@@ -23,7 +23,7 @@ const ProjectCard = ({ style, project, index, isVisible }) => {
       <h2 className="project-name">{project.name}</h2>
       <div className="logos api">
         {project.tech.ios && (
-          <img src={skills.platforms[0].icon} alt="ios platform" />
+          <img src={skills.platforms[5].icon} alt="ios platform" />
         )}
         {project.tech.appleMaps && (
           <img src={skills.apis[0].icon} alt="apple maps api" />
