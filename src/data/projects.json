@@ -42,7 +42,7 @@
     "imgUrl": "https://i.imgur.com/JYdWeK1.png",
     "summary": "The ultimate travel companion (WIP).",
     "why": "As a frequent traveler, I've always wanted a fun, simple way to data-mine my trips. Something that could game-ify the experience a little. How many miles did I travel by car? By foot? By train? What's the percentage of cities in Italy or Greece that I've visited? How much of the Americas have I seen? TravelBook will log all of this, complete with photo albums and Achievements you can earn along the way.",
-    "challenge": "Finding a reliable search radius for Google Places. There's no one-size-fits-all. For example, a search for \"airports\" around Los Angeles returns 10+ hits, but in Osaka, Japan you get nada. I wanted a way for the radius to grow intelligently.",
+    "challenge": "Finding a reliable search radius for Google Places. There's no one-size-fits-all. For example, a 10km search for \"airports\" around Los Angeles returns 10+ hits, but in Osaka, Japan you get nada. I wanted a way for the radius to grow intelligently.",
     "how": "Recursion to the rescue! I wrote a simple recursive function: if search results are less than X, double the search radius and search again.",
     "appLink": "",
     "repoLink": "https://github.com/sjaugmented/travel-book-client",
