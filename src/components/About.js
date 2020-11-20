@@ -41,8 +41,8 @@ const About = () => {
         <p>
           When I’m not programming or shooting features or commercials, you can
           find me hiking, perfecting my homemade cold-brew (of course you can
-          try it), or chilling with a good story - no matter where it might come
-          from.
+          try it!), or chilling with a good story - no matter where it might
+          come from.
         </p>
 
         <p>
